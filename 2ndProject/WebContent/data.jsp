@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE HTML>
 <html>
 
@@ -73,12 +75,12 @@
                 <div class="top-menu">
                     <div class="row">
                         <div class="col-xs-3">
-                            <div id="fh5co-logo"><a href="home.html">감정의 온도</a></div>
+                            <div id="fh5co-logo"><a href="home.jsp">감정의 온도</a></div>
                         </div>
                         <div class="col-xs-9 text-right menu-1">
                             <ul>
                                 <li class="has-dropdown">
-                                    <a href="data.html">데이터 분석하기</a>
+                                    <a href="data.jsp">데이터 분석하기</a>
                                     <ul class="dropdown">
                                         <li><a href="#">Web Design</a></li>
                                         <li><a href="#">eCommerce</a></li>
@@ -87,7 +89,7 @@
                                     </ul>
                                 </li>
                                 <li class="has-dropdown">
-                                    <a href="memory.html">기억창고</a>
+                                    <a href="memory.jsp">기억창고</a>
                                     <ul class="dropdown">
                                         <li><a href="#">1월</a></li>
                                         <li><a href="#">2월</a></li>
@@ -95,8 +97,8 @@
                                         <li><a href="#">4월</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="home.html">로그아웃</a></li>
+                                <li><a href="contact.jsp">Contact</a></li>
+                                <li><a href="home.jsp">로그아웃</a></li>
                             </ul>
                         </div>
                     </div>
