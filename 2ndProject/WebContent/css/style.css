@@ -96,6 +96,14 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 
+.fh5co-work {
+  align-items: center;
+}
+
+.data-upload, .dot-chart, .save {
+  padding : 1.5em 0;
+}
+
 .fh5co-nav {
   margin: 5em 0 0 0;
 }
@@ -494,6 +502,21 @@ h1, h2, h3, h4, h5, h6, figure {
   #fh5co-footer {
     padding: 3em 1em;
   }
+}
+
+.videoContainer { 
+  position : relative;
+  padding-bottom : 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.videoContainer video {
+  position: absolute;
+  top : 0;
+  left : 0;
+  width: 100%;
+  height: 100%;
 }
 
 .services {
@@ -1078,7 +1101,7 @@ input[type="text"] {
   position: absolute;
   right: 0px;
   font-family: 'icomoon';
-  speak: none;
+ 
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
