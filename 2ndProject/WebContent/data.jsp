@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
-<title>ARIES - Free Bootstrap Theme by WowThemes.net</title>
+<title>Neptune - Free Bootstrap Theme by WowThemes.net</title>
 <!-- Bootstrap Core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <!-- Custom CSS -->
@@ -31,7 +33,8 @@
 		<i class="fa fa-bars"></i>
 		</button>
 		<a class="navbar-brand page-scroll" href="home.html">
-		ARIES </a>
+		ARIES
+		</a>
 	</div>
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
@@ -57,11 +60,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				<h1 class="brand-heading">Page Sample</h1>
+				<h1 class="brand-heading">Project Name</h1>
 				<p class="intro-text">
-					Use it for any kind of content
+					Buildings, Parks, Gardens
 				</p>
-				<a href="#page-sample" class="btn btn-circle page-scroll">
+				<a href="#single-project" class="btn btn-circle page-scroll">
 				<i class="fa fa-angle-double-down animated"></i>
 				</a>
 			</div>
@@ -69,35 +72,19 @@
 	</div>
 </div>
 </header>
-<!-- Page Sample Section -->
-<section id="page-sample">
-<div class="container content-section text-left">
+<!-- Project Details Section -->
+<section id="single-project">
+<div class="container content-section text-center">
 	<div class="row">
-		<h2 class="text-center">SUBTITLE HERE</h2>
+		<h2>STEPS OF PROJECT</h2>
 		<div class="col-lg-8 col-lg-offset-2">
 			<p>
-				A group of girlfriends is on vacation when they see a 5-story hotel with a sign that reads: "For Women Only." Since they are without their boyfriends and husbands, they decide to go in.
+				Describe project here, add some images etc. Praesent ac dignissim diam. Aliquam lobortis elit et sapien eleifend, at sollicitudin metus elementum. Morbi imperdiet id ipsum at tristique. Nam suscipit tristique sem, <a href="#">quis</a> laoreem.
 			</p>
 			<p>
-				The bouncer, a very attractive guy, explains to them how it works. "We have 5 floors. Go up floor by floor, and once you find what you are looking for, you can stay there. It's easy to decide since each floor has a sign telling you what's inside."
-			</p>
-			<p>
-				So they start going up and on the first floor the sign reads: "All the men on this floor are short and plain." The friends laugh and without hesitation move on to the next floor.
-			</p>
-			<p>
-				The sign on the second floor reads: "All the men here are short and handsome." Still, this isn't good enough, so the friends continue on up.
-			</p>
-			<p>
-				They reach the third floor and the sign reads: "All the men here are tall and plain."
-			</p>
-			<p>
-				They still want to do better, and so, knowing there are still two floors left, they continued on up.
-			</p>
-			<p>
-				On the fourth floor, the sign is perfect: "All the men here are tall and handsome." The women get all excited and are going in when they realize that there is still one floor left. Wondering what they are missing, they head on up to the fifth floor.
-			</p>
-			<p>
-				There they find a sign that reads: "There are no men here. This floor was built only to prove that there is no way to please a woman."
+				<a href="#" class="btnghost"><i class="fa fa-envelope"></i> Request similar project</a> 
+				<i style="font-size:12px;margin-right:3px;"> or </i> 
+				<a href="index.html#portfolio" class="btnghost"><i class="fa fa-camera"></i> Back to projects gallery</a>
 			</p>
 		</div>
 	</div>
