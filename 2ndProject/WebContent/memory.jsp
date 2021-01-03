@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE HTML>
 <html>
 
@@ -89,10 +91,10 @@
                                 <li class="has-dropdown">
                                     <a href="memory.jsp">기억창고</a>
                                     <ul class="dropdown">
-                                        <li><a href="#">Web Design</a></li>
-                                        <li><a href="#">eCommerce</a></li>
-                                        <li><a href="#">Branding</a></li>
-                                        <li><a href="#">API</a></li>
+                                        <li><a href="#">1월</a></li>
+                                        <li><a href="#">2월</a></li>
+                                        <li><a href="#">3월</a></li>
+                                        <li><a href="#">4월</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="contact.jsp">Contact</a></li>
@@ -111,12 +113,9 @@
                         <li style="background-image: url(images/img_bg_3.jpg);">
                             <div class="overlay-gradient"></div>
                             <div class="container-fluids">
-                                <div class="row">
-                                    <div class="col-md-6 col-md-offset-3 slider-text slider-text-bg">
-                                        <div class="slider-text-inner text-center">
-                                            <h1>Contact</h1>
-                                            <h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-                                        </div>
+                                <div class="col-md-6 col-md-offset-3 slider-text slider-text-bg">
+                                    <div class="slider-text-inner text-center">
+                                        <h1>1월 기억창고</h1>
                                     </div>
                                 </div>
                             </div>
@@ -124,45 +123,15 @@
                     </ul>
                 </div>
             </aside>
-            <div id="fh5co-contact">
-                <div class="row animate-box">
-                    <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-                        <h2>Contact us</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-                    </div>
-                </div>
+            <div id="fh5co-blog">
                 <div class="row">
-                    <div class="col-md-3 col-md-push-1 animate-box">
-                        <h3>Our Address</h3>
-                        <ul class="contact-info">
-                            <li><i class="icon-location4"></i>198 West 21th Street, Suite 721 New York NY 10016</li>
-                            <li><i class="icon-phone3"></i>+ 1235 2355 98</li>
-                            <li><i class="icon-location3"></i><a href="#">info@yoursite.com</a></li>
-                            <li><i class="icon-globe2"></i><a href="#">www.yoursite.com</a></li>
-                        </ul>
+                    <div class="col-md-4">
+                        <div class="blog-text">
+                            <h3>통계 사진 나오는곳</h3>
+                        </div>
                     </div>
-                    <div class="col-md-7 col-md-push-1 animate-box">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Name">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Email">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="submit" value="Send Message" class="btn btn-primary btn-modify">
-                                </div>
-                            </div>
+                    <div class="col-md-4">
+                        <div class="blog-text">
                         </div>
                     </div>
                 </div>
@@ -172,45 +141,6 @@
 
         <div class="container-wrap">
             <footer id="fh5co-footer" role="contentinfo">
-                <div class="row">
-                    <div class="col-md-3 fh5co-widget">
-                        <h4>About Neat</h4>
-                        <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-                    </div>
-                    <div class="col-md-3 col-md-push-1">
-                        <h4>Latest Posts</h4>
-                        <ul class="fh5co-footer-links">
-                            <li><a href="#">Amazing Templates</a></li>
-                            <li><a href="#">100+ Free Download Templates</a></li>
-                            <li><a href="#">Neat is now available</a></li>
-                            <li><a href="#">Download 1000+ icons</a></li>
-                            <li><a href="#">Big Deal for this month of March, Join Us here</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-3 col-md-push-1">
-                        <h4>Links</h4>
-                        <ul class="fh5co-footer-links">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Work</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">About us</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-3">
-                        <h4>Contact Information</h4>
-                        <ul class="fh5co-footer-links">
-                            <li>198 West 21th Street, <br> Suite 721 New York NY 10016</li>
-                            <li><a href="tel://1234567920">+ 1235 2355 98</a></li>
-                            <li><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
-                            <li><a href="http://gettemplates.co">gettemplates.co</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-
                 <div class="row copyright">
                     <div class="col-md-12 text-center">
                         <p>
