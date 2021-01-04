@@ -80,8 +80,6 @@ a:focus {
     outline: 0;
 }
 
-.navbar-custom a {}
-
 .navbar-custom .nav li a {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -184,7 +182,6 @@ a:focus {
 
 .row {
     text-align :center;
-    padding : 40px;
 }
 
 .about-srvice {
@@ -205,13 +202,14 @@ a:focus {
 
 .info {
     text-align : center;
-    padding : 40px 0;
+    padding : 40px;
     display: table;
     width : 100%;
 }
 
 .infoItem {
-	display: table-cell;
+    display : table-cell;
+    display : middle ;
 }
 
 .info ul {
@@ -229,6 +227,57 @@ a:focus {
 	position:relative;
 	list-style:none;
 	padding:0;
+}
+
+.temperatureBox, .graphBox {
+    text-align: center;
+}
+
+
+.dotGraph {
+    overflow: hidden;
+    width : 100% ;
+    float : left ;
+    position : relative;
+    padding-bottom : 56.25%;
+    padding-top : 25px;
+    height : 0;
+}
+
+.dotGraph iframe {
+    position : absolute;
+    top : 0;
+    bottom : 0;
+    width : 100%;
+    height: 100%;
+    display: block;
+}
+
+.temperature-img {
+    display : inline-block;
+}
+
+.relationshipBox {
+    text-align: center;
+}
+
+.bubbleGraph {
+    overflow: hidden;
+    width : 100% ;
+    float : left ;
+    position : relative;
+    padding-bottom : 56.25%;
+    padding-top : 25px;
+    height : 0;
+}
+
+.bubbleGraph iframe {
+    position : absolute;
+    top : 0;
+    bottom : 0;
+    width : 100%;
+    height: 100%;
+    display: block;
 }
 
 .btn-circle {
@@ -310,6 +359,20 @@ a:focus {
 @media(min-width:767px) {
     .content-section {
         padding: 150px 0;
+        clear: both;
+    }
+}
+
+.relationship {
+    padding: 40px 0;
+    clear: both;
+    text-align: center;
+}
+
+@media(min-width:767px) {
+    .relationship {
+        padding-top : 200px;
+        padding-bottom : 30px;
         clear: both;
     }
 }
