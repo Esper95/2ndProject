@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Neptune - Free Bootstrap Theme by WowThemes.net</title>
+        <title>ARIES - Free Bootstrap Theme by WowThemes.net</title>
         <!-- Bootstrap Core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom CSS -->
@@ -21,9 +21,9 @@
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     </head>
 
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -32,11 +32,9 @@
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-			<i class="fa fa-bars"></i>
-			</button>
-                    <a class="navbar-brand page-scroll" href="home.html">
-			감정의 온도
-			</a>
+		<i class="fa fa-bars"></i>
+		</button>
+                    <a class="navbar-brand page-scroll" href="home.html">감정의 온도 </a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
@@ -50,56 +48,50 @@
                         <li>
                             <a href="contact.html">연결고리</a>
                         </li>
+                        <li>
+                            <a href="login&join.html">로그인/회원가입</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
             <!-- /.container -->
         </nav>
-        <!-- Intro Header -->
 
-        <section id="single-project">
-            <div class="container content-section text-center">
-                <div class="row">
-                    <h2>데이터 업로드(명칭 뭘로하지?)</h2>
-                    <div class="dataUP">
-                        <p>분석할 데이터를 추가하세요</p>
-                        <p>
-                            <form action="DataUpload">
-                                <input type="file" name="file" class="btnghost">
-                                <input type="submit" class="btnghost" value="+">
-                            </form>
-                        </p>
-                    </div>
+
+        <!--login&join-->
+        <section style="background-color: whitesmoke;" id="login">
+            <div class="content-section col-md-4 col-md-offset-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">로그인</div>
+                        <div class="panel-body">
+                	    <form action="LoginService">
+                            <input type="text" class="form-control" placeholder="ID" name="id"><br />
+                            <input type="text" class="form-control" placeholder="비밀번호" name="pw"><br />
+                            <input type="submit" class="btn btn-lg btn-info btn-block" value="로그인"></input>
+                    	</form>
+                        </div>
                 </div>
-        </section>
-        <section class="temperature">
-            <div class="temperatureBox">
-                <div class="temperature-keyword">
-                    <h2>우리 감정의 온도</h2>
-                    <p>키워드 출력</p>
+                <div class="panel panel-default">
+                    <div class="panel-heading">회원가입</div>
+                        <div class="panel-body">
+    		            <form action="JoinService">
+                            <input type="text" class="form-control" placeholder="ID" name="id"> <br />
+                            <input type="text" class="form-control" placeholder="비밀번호" name="pw"><br />
+                            <input type="text" class="form-control" placeholder="핸드폰번호" name="phone"><br />
+                            <input type="text" class="form-control" placeholder="EMAIL" name="email"><br />
+                            <input type="submit" class="btn btn-lg btn-success btn-block" value="회원가입"></input>
+		                </form>
+                        </div>
                 </div>
-                <div class="temperature-img"><img>감정 이미지(표정)출력</div>
-            </div>
-        </section>
-        <section id="temperatureGraph">
-            <div class="graphBox">
-                <div class="dotGraph">
-                    <iframe src="graph\dot.html"></iframe>
-                </div>
-                <p>
-                    <a href="#" class="btnghost"><i class="#"></i> 온도 저장하기</a>
-                    <!-- <form action="DataSave">
-						<input type="submit" class="btnghost" value="온도 저장하기">
-					</form> -->
-                </p>
             </div>
         </section>
         <!-- Footer -->
         <footer>
             <div class="container text-center">
                 <p class="credits">
-                    트위터 / 페이스북 / 인스타그램 / 연결고리
+                    Shared by <i class="fa fa-love"></i><a href="https://bootstrapthemes.co">BootstrapThemes</a>
+
                 </p>
             </div>
         </footer>
