@@ -64,25 +64,25 @@
             <div class="content-section col-md-4 col-md-offset-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">로그인</div>
-                    <form action="LoginService">
                         <div class="panel-body">
+                	    <form action="LoginService">
                             <input type="text" class="form-control" placeholder="ID" name="id"><br />
                             <input type="text" class="form-control" placeholder="비밀번호" name="pw"><br />
-                            <input class="btn btn-lg btn-info btn-block" value="로그인"></input>
+                            <input type="submit" class="btn btn-lg btn-info btn-block" value="로그인"></input>
+                    	</form>
                         </div>
-                    </form>
                 </div>
                 <div class="panel panel-default">
                     <div class="panel-heading">회원가입</div>
-                    <form action="JoinService">
                         <div class="panel-body">
+    		            <form action="JoinService">
                             <input type="text" class="form-control" placeholder="ID" name="id"> <br />
                             <input type="text" class="form-control" placeholder="비밀번호" name="pw"><br />
                             <input type="text" class="form-control" placeholder="핸드폰번호" name="phone"><br />
                             <input type="text" class="form-control" placeholder="EMAIL" name="email"><br />
-                            <button class="btn btn-lg btn-success btn-block">회원가입</button>
+                            <input type="submit" class="btn btn-lg btn-success btn-block" value="회원가입"></input>
+		                </form>
                         </div>
-                    </form>
                 </div>
             </div>
         </section>
