@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+    <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -32,112 +34,84 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
 		<i class="fa fa-bars"></i>
 		</button>
-                <a class="navbar-brand page-scroll" href="home.html">
-		감정의 온도 </a>
+                <a class="navbar-brand page-scroll" href="home.html">감정의 온도 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="login.html">로그인</a>
-                    </li>
-                    <li>
+                      </li>
+                      <li>
                         <a href="join.html">회원가입</a>
-                    </li>
+                      </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
+
     <!-- Intro Header -->
-    <header class="intro">
+    <!-- <header class="intro">
         <div class="intro-body">
-            <!-- <div class="video">
+            <div class="video">
 		<video muted autoplay loop>
 		<source src="aries-html\aries-html\video\sample.mp4" type="video/mp4">
 		<strong>Your browser does not support the video tag.</strong>
 		</video> 일단 비디오 안뜸
-	</div> -->
+	</div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">감정의 온도</h1>
-                        <p class="intro-text">
-                            글자 사이에 숨겨진 따뜻한 이야기
-                        </p>
-                        <a href="#about" class="btn btn-circle page-scroll">
+                        <h1 class="brand-heading">로그인/회원가입</h1>
+                        <br>
+                        <a href="#login" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-    <!-- About Section -->
-    <section id="about">
-        <div class="about-srvice">
-            <div class="row">
-                <h2>감정의 온도를 재는 방법</h2>
-                <div class="service">
-                    <div class="serviceItem">
-                        <div class="serviceIcon"><img src=""></div>
-                        <p>Step 1</p>
-                    </div>
-                    <div class="serviceItem">
-                        <div class="serviceIcon"><img src=""></div>
-                        <p>Step 2</p>
-                    </div>
-                    <div class="serviceItem">
-                        <div class="serviceIcon"><img src=""></div>
-                        <p>Step 3</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="portfolio">
-        <div class="info">
-            <div class="infoItem">
-                <p>남자셋<br>여자셋</p>
-            </div>
-            <div class="infoItem">
-                <ul>
-                    <li>
-                        <p>머신러닝</p>
-                    </li>
-                    <li>
-                        <p>데이터베이스</p>
-                    </li>
-                    <li>
-                        <P>웹디자인</P>
-                    </li>
-                </ul>
-            </div>
-            <div class="infoItem">
-                <ul>
-                    <li>
-                        <p>주소</p>
-                    </li>
-                    <li>
-                        <p>전화</p>
-                    </li>
-                    <li>
-                        <P>이메일</P>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    </header> -->
+
+
+    <!--login&join-->
+   
+    <section id="intro">
+		<div class="intro-container" data-aos="zoom-in" data-aos-delay="100">
+			<div class="login-box">
+				<h2>회원가입</h2>
+				<form>
+					<div class="user-box">
+						<input type="text" name="eamil" required=""> <label>아이디</label>
+					</div>
+					<div class="user-box">
+						<input type="password" name="pw" required=""> <label>비밀번호</label>
+					</div>
+					<div class="user-box">
+						<input type="text" name="name" required=""> <label>핸드폰</label>
+					</div>
+					<div class="user-box">
+						<input type="text" name="name" required=""> <label>이메일</label>
+					</div>
+					<a href="#" class="btn btn-info" style="align-self: center" border-radius= "5px"> 
+						회원가입
+					</a>
+				</form>
+			</div>
+		</div>
+
+	</section>
     <!-- Footer -->
     <footer>
         <div class="container text-center">
             <p class="credits">
-                트위터 / 페이스북 / 인스타그램 / 연결고리
+                Shared by <i class="fa fa-love"></i><a href="https://bootstrapthemes.co">BootstrapThemes</a>
+
             </p>
         </div>
     </footer>
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
