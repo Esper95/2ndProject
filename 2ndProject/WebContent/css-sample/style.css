@@ -1,0 +1,212 @@
+#contain {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-width: 1260px;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 82px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    z-index: 100;
+    min-width: 1260px;
+}
+
+
+
+#header .navbar {
+position: relative;
+width: 1200px;
+margin: 0 auto;
+}
+
+#header .navbar h1.logo {
+    position: absolute;
+    left: 0;
+    top: 31px;
+}
+
+#header .navbar h1.logo img {
+    width: 100%;
+    vertical-align: top;
+}
+
+#header .navbar h1.logo a {
+    display: block;
+    height: 24px;
+}
+
+#header .menu ul {
+    padding-top : 30px;
+    overflow: hidden;
+    float: right;
+}
+
+#header .menu ul li {
+    float: left;
+    padding-right: 50px;
+    line-height: 28px;
+    font-size: 22px;
+    color: #363636;
+    letter-spacing: 0;
+}
+
+.effect a {
+    overflow: hidden;
+    padding : 0 5px;
+    display: block;
+}
+
+.effect a span {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.effect a span::before {
+    position: absolute;
+    top : 100%;
+    content : "afft(data-hover)";
+    font-weight: 700;
+    color : red;
+    transform : translate3d(0,0,0)
+}
+
+#footer{
+    clear: both;
+    width: 100%;
+    padding: 20px 0 60px 0;
+    background: #ffe4e5
+    ;
+}
+
+#footer .contact-sns {
+    text-align: center;
+}
+
+#sub {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 82px;
+}
+
+#sub-title {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#sub-title .t-area {
+    position: relative;
+    width: 1200px;
+    height: 174px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#sub-title .t-area h2 {
+    font-size: 40px;
+    color: #363636;
+    font-weight: 700;
+    padding-top: 18px;
+    line-height: 44px;
+}
+
+#sub-title .t-area .data-up-btn {
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 0;
+    padding: 15px 36px 15px 36px;
+    margin-top : 50px;
+    color: #fff;
+    display: inline-block;
+    background: #3d2d51;
+    border-radius: 50px;
+    transition: all 300ms;
+}
+
+#container{
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    margin: 0 auto;
+    padding-bottom: 140px;
+}
+
+
+.data-up {
+    width: 100%;
+    min-height: 470px;
+}
+
+.data-up .cont {
+    width: 1200px;
+    margin: 240px auto 0 auto;
+    position: relative;
+}
+
+#container .h4_text {
+    font-size: 28px;
+    color: #363636;
+    display: inline-block;
+    padding-right: 64px;
+}
+
+.btn-data-up {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+#contain .temperature {
+    width: 100%;
+    min-height: 470px;
+}
+
+#contain .temperature iframe {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contain .save-file {
+    width: 100%;
+    text-align: center;
+}
+
+#contain .save-file .save-file-btn {
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 0;
+    padding: 15px 36px 15px 36px;
+    margin-top : 50px;
+    color: #fff;
+    display: inline-block;
+    background: #3d2d51;
+    border-radius: 50px;
+    transition: all 300ms;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    margin: 0 auto;
+    padding-bottom: 140px;
+}
+
+#sub-title .t-area h2 span {
+    display : block;
+    font-size : 18px;
+    font-weight : 300;
+    font-family : 'Nanum Gothic', 'sans-serif';
+    padding-top : 30px;
+}
+
+
+
