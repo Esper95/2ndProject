@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+    <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -38,11 +40,11 @@
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <li>
-                      <a href="login.html">로그인</a>
-                    </li>
-                    <li>
-                      <a href="join.html">회원가입</a>
-                    </li>
+                        <a href="login.html">로그인</a>
+                      </li>
+                      <li>
+                        <a href="join.html">회원가입</a>
+                      </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -74,8 +76,9 @@
     </header> -->
 
 
-    <!-- join-->
-   <section id="intro">
+    <!--login&join-->
+   
+    <section id="intro">
 		<div class="intro-container" data-aos="zoom-in" data-aos-delay="100">
 			<div class="login-box">
 				<h2>회원가입</h2>
