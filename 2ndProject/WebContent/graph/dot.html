@@ -6,26 +6,69 @@
     <script src="https://d3js.org/d3.v3.min.js" language="JavaScript"></script>
     <script src="liquidFillGauge.js" language="JavaScript"></script>
     <style>
-        .liquidFillGaugeText { font-family: Helvetica; font-weight: bold; },
-        #fillgauge2:hover{
-            
+        .liquidFillGaugeText { font-family: Helvetica; font-weight: bold; }
+        #ul1,#ul2,#ul3,#ul4{
+            display : none;
         }
-        
-    </style>
+        #div1:hover #ul1{ display: block; }
+        #div2:hover #ul2{ display: block; }
+        #div3:hover #ul3{ display: block; }
+        #div4:hover #ul4{ display: block; }
+        </style>
+
 </head>
 <body>
-    <div style="display:flex"><p style="color: #FE696D; font-size: 50px;">기쁨</p><p style="color: #FCD34D; font-size: 50px;">분노</p><p style="color: #68C6A3; font-size: 50px;">슬픔</p><p style="color: #3084BA; font-size: 50px;">걱정</p></div>
-        <svg id="fillgauge2" width="19%" height="200" onclick="gauge2.update(NewValue());"></svg>
-        
-        <svg id="fillgauge3" width="19%" height="200" onclick="gauge3.update(NewValue());"></svg>
+    <div style="display: flex;">
+        <div id ="div1">
+            기쁨<br>
+            <svg id="fillgauge2" width="50%" height="200" onclick="gauge2.update(NewValue());"></svg>
+                <div id="ul1">
+                    <ul>   
+                        </li>음식</li>
+                        <li>퇴근</li>
+                        <li>잠</li>
+                    </ul>
+                </div>
+        </div>
 
-        <svg id="fillgauge4" width="19%" height="200" onclick="gauge4.update(NewValue());"></svg>
-
-        <svg id="fillgauge5" width="19%" height="200" onclick="gauge5.update(NewValue());"></svg>
-   
+        <div id="div2">
+            분노<br>
+            <svg id="fillgauge3" width="50%" height="200" onclick="gauge3.update(NewValue());"></svg>
+            <div id="ul2">
+                <ul>   
+                    </li>음식</li>
+                    <li>퇴근</li>
+                    <li>잠</li>
+                </ul>
+            </div>
+        </div>
+        <div id="div3">
+            슬픔<br>
+            <svg id="fillgauge4" width="50%" height="200" onclick="gauge4.update(NewValue());"></svg>
+            <div id="ul3">
+                <ul>   
+                    </li>음식</li>
+                    <li>퇴근</li>
+                    <li>잠</li>
+                </ul>
+            </div>
+        </div>
+        <div id="div4">
+            걱정<br>
+            <svg id="fillgauge5" width="50%" height="200" onclick="gauge5.update(NewValue());"></svg>
+            <div id="ul4">
+                <ul>   
+                    </li>음식</li>
+                    <li>퇴근</li>
+                    <li>잠</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
 <script>
     
-
+    
     var happy = 30.0;
     var sad = 50.4;
     var angry = 10.4;
