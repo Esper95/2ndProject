@@ -32,7 +32,7 @@
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
 		<i class="fa fa-bars"></i>
 		</button>
-		<a class="navbar-brand page-scroll" href="home.html">
+		<a class="navbar-brand page-scroll" href="home.jsp">
 		ARIES </a>
 	</div>
 	<!-- Collect the nav links, forms, and other content for toggling -->
@@ -46,6 +46,9 @@
 			</li>
 			<li>
 			<a href="contact.html">연결고리</a>
+			</li>
+			<li>
+				<a href="LogoutService">로그아웃</a>
 			</li>
 		</ul>
 	</div>

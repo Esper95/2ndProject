@@ -14,8 +14,7 @@ public class memberDAO {
 	PreparedStatement psmt = null;
 	ResultSet rs = null;
 	int cnt = 0;
-	memberDTO data =null;
-	
+
 	//DB 연결
 	public void conn(){
 		try {
@@ -52,57 +51,59 @@ public class memberDAO {
 	}
 	
 	//회원 가입 
-		public int join(memberDTO dto) {
-			conn();
-		
-			try {
-				String sql = "insert into table values(?,?,?,?)";
-				psmt = conn.prepareStatement(sql);
-				
-				psmt.setString(1, dto.getId());
-				psmt.setString(2, dto.getPw());
-				psmt.setString(3, dto.getPhone());
-				psmt.setString(4, dto.getEmail());
-				
-				cnt = psmt.executeUpdate();
-				
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}finally {
-				close();
-			}
+	public int join(memberDTO dto) {
+		conn();
+	
+		try {
+			String sql = "insert into kakaomember values(?,?,?,?,?)";
+			psmt = conn.prepareStatement(sql);
 			
-			return cnt;
+			psmt.setString(1, dto.getId());
+			psmt.setString(2, dto.getPw());
+			psmt.setString(3, dto.getName());
+			psmt.setString(4, dto.getPhone());
+			psmt.setString(5, dto.getEmail());
+			
+			cnt = psmt.executeUpdate();
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			close();
 		}
+		
+		return cnt;
+	}
 		
 		//로그인 
-		public memberDTO login(memberDTO dto) {
-			conn();
+	public memberDTO login(memberDTO dto) {
+		conn();
+		memberDTO data =null;
+		try {
+			String sql = "select name, phone, email from kakaomember where id=? and pw=?";
+			psmt = conn.prepareStatement(sql);
+			psmt.setString(1, dto.getId());
+			psmt.setString(2, dto.getPw());
+			rs =  psmt.executeQuery();
 			
-			
-			try {
-				String sql = "select * from table where id=? and pw=?";
-				psmt = conn.prepareStatement(sql);
-				psmt.setString(1, dto.getId());
-				psmt.setString(2, dto.getPw());
-				
-				rs =  psmt.executeQuery();
-				
-				if(rs.next()) {
-					
-					//리턴값 배열로 말고 dto 에 값을 넣어줌 
-					data = new memberDTO(dto.getId(),dto.getPw());
-				}
-				
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}finally {
-				close();
+			if(rs.next()) {
+				// 리턴값 배열로 말고 dto 에 값을 넣어줌
+				String name = rs.getString(1); // name
+				String phone = rs.getString(2); // phone
+				String email = rs.getString(3); // email
+				data = new memberDTO(dto.getId(), dto.getPw(), name, phone, email);
 			}
-			return data;
+
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			close();
 		}
+		return data;
+	}
 		
 		//고객정보수정
 		public int Update(memberDTO dto) {
