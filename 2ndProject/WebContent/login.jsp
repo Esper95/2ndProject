@@ -34,16 +34,16 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
 		<i class="fa fa-bars"></i>
 		</button>
-                <a class="navbar-brand page-scroll" href="home.html">감정의 온도 </a>
+                <a class="navbar-brand page-scroll" href="home.jsp">감정의 온도 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="login.html">로그인</a>
+                        <a href="login.jsp">로그인</a>
                       </li>
                       <li>
-                        <a href="join.html">회원가입</a>
+                        <a href="join.jsp">회원가입</a>
                       </li>
                 </ul>
             </div>
@@ -82,19 +82,17 @@
 		<div class="intro-container" data-aos="zoom-in" data-aos-delay="100">
 			<div class="login-box">
 				<h2>로그인</h2>
-				<form>
+				<form action="LoginService" method="post">
 					<div class="user-box">
-						<input type="text" name="email" required=""> <label>이메일</label>
+						<input type="text" name="id" required=""> <label>아이디</label>
 					</div>
 					<div class="user-box">
 						<input type="password" name="pw" required=""> <label>비밀번호</label>
 					</div>
-					<a href="#" class="btn btn-info" style="align-self: center" border-radius= "5px">
-						로그인
-					</a>
+					<input type="submit" value="로그인" class="btn btn-info" style="align-self: center; border-radius: 5px;">
 				</form>
 			</div>
-		</div>
+		</div> 
 
 	</section>
     <!-- Footer -->

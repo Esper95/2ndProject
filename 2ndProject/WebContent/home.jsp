@@ -1,3 +1,4 @@
+<%@page import="conn.model.memberDTO"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <!DOCTYPE html>
@@ -24,6 +25,7 @@
     <![endif]-->
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<%memberDTO user =(memberDTO)session.getAttribute("user"); %>
 <!-- Navigation -->
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 <div class="container">
@@ -31,21 +33,33 @@
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
 		<i class="fa fa-bars"></i>
 		</button>
-		<a class="navbar-brand page-scroll" href="home.html">
+		<a class="navbar-brand page-scroll" href="home.jsp">
 		ARIES </a>
 	</div>
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 		<ul class="nav navbar-nav">
+		<%if(user!= null){ %>
 			<li>
-			<a href="data.html">온도계</a>
+				<a href="data.jsp">온도계</a>
 			</li>
 			<li>
-			<a href="memory.html">기억창고</a>
+				<a href="memory.jsp">기억창고</a>
 			</li>
 			<li>
-			<a href="contact.html">연결고리</a>
+				<a href="contact.jsp">연결고리</a>
 			</li>
+			<li>
+				<a href="LogoutService">로그아웃</a>
+			</li>
+			<%}else{ %>
+			<li>
+               <a href="login.jsp">로그인</a>
+           </li>
+           <li>
+               <a href="join.jsp">회원가입</a>
+           </li>
+           <%} %>
 		</ul>
 	</div>
 	<!-- /.navbar-collapse -->
