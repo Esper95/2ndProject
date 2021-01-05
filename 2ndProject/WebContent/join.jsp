@@ -95,7 +95,7 @@
 					<div class="user-box">
 						<input type="text" name="name" required=""> <label>이메일</label>
 					</div>
-					<a href="#" class="btn btn-info" style="align-self: center" border-radius= "5px"> 
+					<a href="#" class="btn btn-info" style="align-self: center;  border-radius: 5px;"> 
 						회원가입
 					</a>
 				</form>
