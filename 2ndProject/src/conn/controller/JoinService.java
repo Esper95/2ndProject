@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import conn.model.memberDAO;
 import conn.model.memberDTO;
 
 /**
@@ -24,10 +25,17 @@ public class JoinService extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		String id =request.getParameter("id");
 		String pw =request.getParameter("pw");
+		String name =request.getParameter("name");
 		String phone =request.getParameter("phone");
 		String email =request.getParameter("email");
 		
-		memberDTO dto = new memberDTO(id, pw, phone, email);
+		memberDAO dao = new memberDAO();
+		memberDTO dto = new memberDTO(id, pw, name, phone, email);
+		int cnt =dao.join(dto);
+		
+		if(cnt>0) {
+			response.sendRedirect("login.jsp");
+		}
 	
 	}
 
