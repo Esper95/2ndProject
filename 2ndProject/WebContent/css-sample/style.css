@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Cute+Font&family=Do+Hyeon&family=East+Sea+Dokdo&family=Gaegu&display=swap');
+@font-face {
+    font-family: 'Jal_Haru';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Haru.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 #contain {
     position: relative;
     width: 100%;
@@ -10,7 +20,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 82px;
+    height: 60px;
     background: #fff;
     border-bottom: 1px solid #ddd;
     z-index: 100;
@@ -25,18 +35,21 @@ width: 1200px;
 margin: 0 auto;
 }
 
-#header .navbar h1.logo {
+#header .navbar p.logo {
     position: absolute;
     left: 0;
-    top: 31px;
+    top: 15px;
+    font-family:'Jal_Onuel' ;
+    font-size : 30px;
+    padding-left : 20px;
 }
 
-#header .navbar h1.logo img {
+#header .navbar p.logo img {
     width: 100%;
     vertical-align: top;
 }
 
-#header .navbar h1.logo a {
+#header .navbar p.logo a {
     display: block;
     height: 24px;
 }
@@ -48,40 +61,25 @@ margin: 0 auto;
 }
 
 #header .menu ul li {
+    
     float: left;
-    padding-right: 50px;
+    padding-right: 30px;
     line-height: 28px;
-    font-size: 22px;
+    font-size: 15px ;
     color: #363636;
-    letter-spacing: 0;
+    letter-spacing: 3px;
 }
 
-.effect a {
-    overflow: hidden;
-    padding : 0 5px;
-    display: block;
-}
-
-.effect a span {
-    position: relative;
-    display: inline-block;
-    transition: transform 0.3s;
-}
-
-.effect a span::before {
-    position: absolute;
-    top : 100%;
-    content : "afft(data-hover)";
-    font-weight: 700;
-    color : red;
-    transform : translate3d(0,0,0)
+#header > div > nav > ul > li > a > span:hover {
+    font-size : 20px;
+    color : rgb(219, 92, 70);
 }
 
 #footer{
     clear: both;
     width: 100%;
     padding: 20px 0 60px 0;
-    background: #ffe4e5
+    background: whitesmoke;
     ;
 }
 
@@ -90,45 +88,30 @@ margin: 0 auto;
 }
 
 #sub {
-    position: relative;
     margin: 0 auto;
     padding-top: 82px;
 }
 
 #sub-title {
-    position: relative;
     margin: 0 auto;
     width: 100%;
+    position: relative;
+    background-color: ivory
 }
+
+
 
 #sub-title .t-area {
-    position: relative;
+    position: ab;
     width: 1200px;
-    height: 174px;
+    height: 100px;
     margin: 50px auto;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#sub-title .t-area h2 {
-    font-size: 40px;
-    color: #363636;
-    font-weight: 700;
-    padding-top: 18px;
-    line-height: 44px;
-}
-
-#sub-title .t-area .data-up-btn {
-    font-weight: 600;
-    font-size: 22px;
-    letter-spacing: 0;
-    padding: 15px 36px 15px 36px;
-    margin-top : 50px;
-    color: #fff;
-    display: inline-block;
-    background: #3d2d51;
-    border-radius: 50px;
-    transition: all 300ms;
-}
 
 #container{
     position: relative;
@@ -139,37 +122,21 @@ margin: 0 auto;
 }
 
 
-.data-up {
-    width: 100%;
-    min-height: 470px;
-}
-
-.data-up .cont {
-    width: 1200px;
-    margin: 240px auto 0 auto;
-    position: relative;
-}
-
-#container .h4_text {
-    font-size: 28px;
-    color: #363636;
-    display: inline-block;
-    padding-right: 64px;
-}
-
-.btn-data-up {
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-}
-
 #contain .temperature {
     width: 100%;
-    min-height: 470px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(206, 206, 206);
 }
+
+
+
 
 #contain .temperature iframe {
     width: 80%;
+    height: 80%;
     margin: 0 auto;
     text-align: center;
 }
@@ -179,34 +146,136 @@ margin: 0 auto;
     text-align: center;
 }
 
-#contain .save-file .save-file-btn {
-    font-weight: 600;
-    font-size: 22px;
-    letter-spacing: 0;
-    padding: 15px 36px 15px 36px;
-    margin-top : 50px;
-    color: #fff;
-    display: inline-block;
-    background: #3d2d51;
-    border-radius: 50px;
-    transition: all 300ms;
-}
+
 
 .container{
     position: relative;
     width: 100%;
-    min-height: 300px;
     margin: 0 auto;
     padding-bottom: 140px;
 }
 
-#sub-title .t-area h2 span {
-    display : block;
-    font-size : 18px;
-    font-weight : 300;
-    font-family : 'Nanum Gothic', 'sans-serif';
-    padding-top : 30px;
+#contain .temperature-b {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(206, 206, 206);
 }
+
+#contain .temperature-b iframe {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.data-up-text {
+    
+    color: #363636;
+    font-size : 20px;
+    margin-right : 30px;
+}
+
+.data-up-btn > p {
+    font-size: 20px;
+    color: whitesmoke;
+    letter-spacing: 5px;
+    height: 30px;
+    width: 180px;
+    background-color: rgb(219, 92, 70);
+    margin: 15px auto;
+    border: none;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 50px;
+}
+
+.save-file-btn > p {
+    font-size: 20px;
+    color: whitesmoke;
+    letter-spacing: 5px;
+    height: 30px;
+    width: 180px;
+    background-color: rgb(219, 92, 70);
+    margin: 20px auto;
+    border: none;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 50px;
+}
+
+.data-result {
+    text-align: center;
+    font-size : 30px;
+    color : #363636;
+    padding-bottom: 30px;
+}
+
+#join {
+    width: 350px;
+    height: auto;
+    margin: 200px auto 160px auto;
+    color: #363636;
+    
+}
+
+#join .input-join {
+    overflow: hidden;
+}
+
+#join .join-btn > a > p {
+
+    font-size: 20px;
+    color: whitesmoke;
+    letter-spacing: 5px;
+    height: 38px;
+    width: 100%;
+    background-color: rgb(219, 92, 70);
+    margin: 15px auto;
+    margin-top : 70px;
+    border: none;
+    text-align: center;
+    padding-top: 15px;
+
+} 
+
+
+#join .input-join input[type=text] , #join .input-join input[type=password] {
+    float: left;
+    width: 100%;
+    padding: 0;
+    padding-left: 24px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    font-size: 16px;
+    border: 1px solid #363636;
+    margin: 8px 0 10px 0;
+    box-sizing: border-box;
+}
+
+#join .input-join label {
+    display: block;
+    clear: both;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#join .logo {
+    font-family: 'Jal_Onuel';
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#join > div:nth-child(2) {
+    color : gray;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 
 
 

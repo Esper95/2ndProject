@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@font-face {
+    font-family: 'Jal_Onuel';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Onuel.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #main {
     position : relative;
     margin : 0 auto ;
-    padding-top : 82px;
+    padding-top : 60px;
 }
 
 .main-visual {
@@ -14,10 +22,32 @@
     width : 100%;
     margin : 0 auto;
     text-align: center;
+    position : relative;
 }
 
 .main-visual .video video {
     max-width: 100%;
+    /* opacity: 0.5; */
+}
+
+.video {
+    max-width : 100%;
+}
+
+ .main-visual .video-text {
+    position : absolute;
+    top : 35%;
+    bottom : 50%;
+    transform: translate( 90%, -50% );
+    color : whitesmoke;
+}
+
+.video .video-text p.video-title {
+    font-size : 80px;
+}
+
+.video .video-text p.video-sub-title {
+    font-size : 30px;
 }
 
 .service {
@@ -30,26 +60,50 @@
     width: 1200px;
     margin: 0 auto;
     padding : 40px 0;
+    text-align: center;
+}
+
+.service .area h2 {
+    font-size: 40px;
+    color: #363636;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom : 30px;
+    line-height: 44px;
 }
 
 .service .area > div {
     float : left;
     width:  calc(100%/3);
     text-align: center;
+    border-left : 1px solid rgb(194, 192, 192);
 }
 
-.service-items .service-text {
-    font-size: 18x;
+.service > div > div:nth-child(2){
+    border-left : 0;
+}
+
+.service-items {
     line-height: 26px;
-    color: #363636;
+    
 }
 
-.service-items .service-text p {
-    position: relative;
-    display: inline-block;
-    font-weight: 700;
-    z-index: 0;
-    transition: .2s;
+.service-name > a > p {
+    font-size : 20px;
+    color : whitesmoke;
+    letter-spacing: 5px;
+    height: 30px;
+    width : 180px;
+    background-color: rgb(219, 92, 70);
+    margin : 15px auto;
+    border : none;
+    text-align: center;
+    padding-top : 10px;
+    border-radius: 50px;
+}
+
+.service-text > p {
+    font-size : 19px;
 }
 
 .program {

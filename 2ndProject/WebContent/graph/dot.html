@@ -3,62 +3,60 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" href="data.css" type="text/css">
     <script src="https://d3js.org/d3.v3.min.js" language="JavaScript"></script>
     <script src="liquidFillGauge.js" language="JavaScript"></script>
     <style>
-        .liquidFillGaugeText { font-family: Helvetica; font-weight: bold; }
-        #ul1,#ul2,#ul3,#ul4{
-            display : none;
+        ul {
+            list-style: none;
+            margin-top: 10px;
+            text-align: center;
+            padding : 0 0;
         }
-        #div1:hover #ul1{ display: block; }
-        #div2:hover #ul2{ display: block; }
-        #div3:hover #ul3{ display: block; }
-        #div4:hover #ul4{ display: block; }
-        </style>
 
+        ul li {
+            font-size : 20px;
+        }
+    </style>
 </head>
-<body>
-    <div style="display: flex;">
-        <div id ="div1">
-            기쁨<br>
-            <svg id="fillgauge2" width="50%" height="200" onclick="gauge2.update(NewValue());"></svg>
-                <div id="ul1">
-                    <ul>   
-                        </li>음식</li>
-                        <li>퇴근</li>
-                        <li>잠</li>
-                    </ul>
-                </div>
+<body style="background-color: whitesmoke;">
+    <div class="dot-box" style="display: flex; text-align : center; justify-content: center; ">
+        <div class ="dot-items">
+            <svg id="fillgauge2" width="200px" height="200" onclick="gauge2.update(NewValue());"></svg>
+            <div class="keyword-items">
+                <ul>   
+                    <li>음식</li>
+                    <li>퇴근</li>
+                    <li>잠</li>
+                </ul>
+            </div>
         </div>
 
-        <div id="div2">
-            분노<br>
-            <svg id="fillgauge3" width="50%" height="200" onclick="gauge3.update(NewValue());"></svg>
-            <div id="ul2">
+        <div class ="dot-items">
+            <svg id="fillgauge3" width="200px" height="200" onclick="gauge3.update(NewValue());"></svg>
+            <div class="keyword-items">
                 <ul>   
-                    </li>음식</li>
+                    <li>음식</li>
                     <li>퇴근</li>
                     <li>잠</li>
                 </ul>
             </div>
         </div>
-        <div id="div3">
-            슬픔<br>
-            <svg id="fillgauge4" width="50%" height="200" onclick="gauge4.update(NewValue());"></svg>
-            <div id="ul3">
+        <div class ="dot-items">
+            <svg id="fillgauge4" width="200px" height="200" onclick="gauge4.update(NewValue());"></svg>
+            <div class="keyword-items">
                 <ul>   
-                    </li>음식</li>
+                    <li>음식</li>
                     <li>퇴근</li>
                     <li>잠</li>
                 </ul>
             </div>
         </div>
-        <div id="div4">
-            걱정<br>
-            <svg id="fillgauge5" width="50%" height="200" onclick="gauge5.update(NewValue());"></svg>
-            <div id="ul4">
+        <div class ="dot-items">
+            <svg id="fillgauge5" width="200px"height="200" onclick="gauge5.update(NewValue());"></svg>
+            <div class="keyword-items">
                 <ul>   
-                    </li>음식</li>
+                    <li>음식</li>
                     <li>퇴근</li>
                     <li>잠</li>
                 </ul>
