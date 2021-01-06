@@ -51,9 +51,11 @@
             <div class="input-join">
                 <form action="JoinService">
                     <label>아이디</label>
-                    <input type="text" name="eamil" required=""> 
+                    <input type="text" name="id" required=""> 
                     <label>비밀번호</label>
                     <input type="password" name="pw" required="">
+                    <label>닉네임</label>
+                    <input type="text" name="name" required=""> 
                     <label>핸드폰</label>
                     <input type="text" name="phone" required=""> 
                     <label>이메일</label>

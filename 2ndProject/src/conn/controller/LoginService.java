@@ -30,6 +30,7 @@ public class LoginService extends HttpServlet {
 		memberDAO dao = new memberDAO();
 		memberDTO dto = new memberDTO(id, pw);
 		memberDTO user =dao.login(dto);
+		
 		if(user!=null) {
 			HttpSession session = request.getSession();
 			session.setAttribute("user", user);
