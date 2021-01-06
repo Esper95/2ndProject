@@ -38,15 +38,11 @@
                         </h3>
                     </div>
                     <div>
-                    <form action ="http://localhost:9000/predict" method="post" enctype="multipart/form-data"  >	
-						<div class="data-up-btn" onclick="onclick=document.all.file.click()">
-	                        <input type="file" style="display: none;" name="file" id="file">
-	                        <a href=""  ><p>파일 업로드</p></a> 
-	                    </div>
-	                    <div class="data-up-btn" onclick="onclick=document.all.upload.click()">
-	                    	<input type="submit" style="display: none;" name="upload" id="upload" > 
-	                        <a href=""  ><p>파일 전송</p></a> 
-	                    </div>
+ 					<form action ="http://localhost:9000/predict" method="post" enctype="multipart/form-data"  >	
+                    
+                    	<input type="file" value="파일 선택" name="file" >
+                    	<input type="submit" value="업로드" ></p> 
+      
                     </form>
                     </div>
                 </div>
