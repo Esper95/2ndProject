@@ -178,7 +178,7 @@ margin: 0 auto;
     margin-right : 30px;
 }
 
-.data-up-btn a > p {
+.data-up-btn  a > p {
     font-size: 20px;
     color: whitesmoke;
     letter-spacing: 5px;
@@ -191,6 +191,7 @@ margin: 0 auto;
     padding-top: 10px;
     border-radius: 50px;
 }
+
 
 .save-file-btn > a > p {
     font-size: 20px;

@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>ê°ì •ì˜ ì˜¨ë„</title>
+    <title>°¨Á¤ÀÇ ¿Âµµ</title>
 
     <link rel="stylesheet" href="css-sample/style.css" type="text/css">
     <link rel="stylesheet" href="css-sample/reset.css" type="text/css">
@@ -19,45 +21,67 @@
         <div id="header">
             <div class="navbar">
                 <p class="logo">
-                    <a href="home-sample.html">ê°ì •ì˜ ì˜¨ë„</a>   
+                    <a href="home.jsp">°¨Á¤ÀÇ ¿Âµµ</a>   
                 </p>
                 <nav class="menu effect">
                     <ul>
-                        <li><a href="data-sample.html"><span data-hover="ì˜¨ë„ê³„">ì˜¨ë„ê³„</span></a></li>
-                        <li><a href="memory-sample.html"><span data-hover="ê¸°ì–µì°½ê³ ">ê¸°ì–µì°½ê³ </span></a></li>
-                        <li><a href="contact-sample.html"><span data-hover="ì—°ê²°ê³ ë¦¬">ì—°ê²°ê³ ë¦¬</span></a></li>
-                        <li><a href="logout.html"><span data-hover="ë¡œê·¸ì•„ì›ƒ">ë¡œê·¸ì•„ì›ƒ</span></a></li>
-                        <li><a href="login.html"><span data-hover="ë¡œê·¸ì¸/íšŒì›ê°€ìž…">ë¡œê·¸ì¸</span></a></li>
-                        <li><a href="join.html"><span data-hover="ë¡œê·¸ì¸/íšŒì›ê°€ìž…">íšŒì›ê°€ìž…</span></a></li>
+                        <li><a href="data.jsp"><span data-hover="¿Âµµ°è">¿Âµµ°è</span></a></li>
+                        <li><a href="memory.jsp"><span data-hover="±â¾ïÃ¢°í">±â¾ïÃ¢°í</span></a></li>
+                        <li><a href="contact.jsp"><span data-hover="¿¬°á°í¸®">¿¬°á°í¸®</span></a></li>
+                        <li><a href="LogoutService"><span data-hover="·Î±×¾Æ¿ô">·Î±×¾Æ¿ô</span></a></li>
+                        <li><a href="login.jsp"><span data-hover="·Î±×ÀÎ/È¸¿ø°¡ÀÔ">·Î±×ÀÎ</span></a></li>
+                        <li><a href="join.jsp"><span data-hover="·Î±×ÀÎ/È¸¿ø°¡ÀÔ">È¸¿ø°¡ÀÔ</span></a></li>
                     </ul>
                 </nav>
             </div>
         </div>
  
     <!-- join-->
+        <!-- <div id="join-ocapity"></div> -->
         <div id="join">
             <div class="logo">
-                <p>ê°ì •ì˜ ì˜¨ë„</p>
+                <p>°¨Á¤ÀÇ ¿Âµµ</p>
             </div>
             <div clas="logo-text">
-                ê°ì •ì˜ ì˜¨ë„ë¥¼ ì´ìš©í•˜ì‹œë ¤ë©´ ë¡œê·¸ì¸ì´ í•„ìš”í•©ë‹ˆë‹¤.
+                <!-- °¨Á¤ÀÇ ¿Âµµ¸¦ ÀÌ¿ëÇÏ½Ã·Á¸é<br>
+                È¸¿ø°¡ÀÔÀÌ ÇÊ¿äÇÕ´Ï´Ù. -->
             </div>
-            <div class="input-login">
+            <div class="input-join">
                 <form>
-                    <label>ì•„ì´ë””</label>
+                    <label>¾ÆÀÌµð</label>
                     <input type="text" name="eamil" required=""> 
-                    <label>ë¹„ë°€ë²ˆí˜¸</label>
-                    <input type="password" name="pw" required="">
+                    <label>ºñ¹Ð¹øÈ£</label>
+                    <input type="password" name="pw" required=""> 
                 </form>
-                <div class="login-btn">
-                    <a href="#"><p>ë¡œê·¸ì¸</p></a> 
+                <div class=join-btn>
+                    <a href="LoginService"><p>·Î±×ÀÎ</p></a> 
                 </div>
-                
+                <div class="find-area">
+                    <div class="find-left">
+                        <a href="#">¾ÆÀÌµð<br>ºñ¹Ð¹øÈ£ Ã£±â</a>
+                    </div>
+                    <div class="find-right">
+                        <a href="#">È¸¿ø°¡ÀÔÇÏ±â </a>
+                    </div>
+                </div>   
             </div>
         </div>
 
     </div>
     <!-- Footer -->
+    <div id="footer">
+        <div class="contact-sns">
+            <span>Æ®À§ÅÍ / ÆäÀÌ½ººÏ / ÀÎ½ºÅ¸±×·¥</span>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/theme.js"></script>
 </body>
 
 </html>
