@@ -60,7 +60,7 @@
                     <input type="text" name="phone" required=""> 
                     <label>이메일</label>
 					<input type="text" name="email" required=""> 
-				    <input type="submit" style="display: none;" name="j" id="j">
+				    <input type="submit" style="display: none;" id="j">
                 </form>
                 <div class=join-btn onclick="onclick=document.all.j.click()">
                     <a href="#"><p>회원가입</p></a> 
