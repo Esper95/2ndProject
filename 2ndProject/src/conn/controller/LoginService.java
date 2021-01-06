@@ -26,14 +26,16 @@ public class LoginService extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		String id =request.getParameter("id");
 		String pw =request.getParameter("pw");
-		
+
 		memberDAO dao = new memberDAO();
 		memberDTO dto = new memberDTO(id, pw);
 		memberDTO user =dao.login(dto);
+		
 		if(user!=null) {
 			HttpSession session = request.getSession();
 			session.setAttribute("user", user);
 		}
+		System.out.println(user);
 		response.sendRedirect("home.jsp");
 	}
 

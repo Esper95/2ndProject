@@ -1,118 +1,81 @@
+<%@page import="conn.model.memberDTO"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>ARIES - Free Bootstrap Theme by WowThemes.net</title>
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="css/theme.css" rel="stylesheet">
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <title>감정의 온도</title>
+    <link rel="stylesheet" href="css-sample/style.css" type="text/css">
+    <link rel="stylesheet" href="css-sample/reset.css" type="text/css">
+    <link rel="stylesheet" href="css-sample/home.css" type="text/css">
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-		<i class="fa fa-bars"></i>
-		</button>
-                <a class="navbar-brand page-scroll" href="home.jsp">감정의 온도 </a>
+<body>
+<%HttpSession session_user = request.getSession();
+  memberDTO user = (memberDTO)session_user.getAttribute("user");%>
+    <div id="contain">
+        <div id="header">
+            <div class="navbar">
+                <p class="logo">
+                    <a href="home.jsp">감정의 온도</a>   
+                </p>
+                <nav class="menu effect">
+                    <ul>
+                        <%if(user!=null){ %>
+                        <li><a href="data.jsp"><span data-hover="온도계">온도계</span></a></li>
+                        <li><a href="memory.jsp"><span data-hover="기억창고">기억창고</span></a></li>
+                        <li><a href="contact.jsp"><span data-hover="연결고리">연결고리</span></a></li>
+                        <li><a href="LogoutService"><span data-hover="로그아웃">로그아웃</span></a></li>
+                        <%}else{ %>
+                        <li><a href="login.jsp"><span data-hover="로그인/회원가입">로그인</span></a></li>
+                        <li><a href="join.jsp"><span data-hover="로그인/회원가입">회원가입</span></a></li>
+                        <%} %>
+                    </ul>
+                </nav>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="login.jsp">로그인</a>
-                      </li>
-                      <li>
-                        <a href="join.jsp">회원가입</a>
-                      </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Intro Header -->
-    <!-- <header class="intro">
-        <div class="intro-body">
-            <div class="video">
-		<video muted autoplay loop>
-		<source src="aries-html\aries-html\video\sample.mp4" type="video/mp4">
-		<strong>Your browser does not support the video tag.</strong>
-		</video> 일단 비디오 안뜸
-	</div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">로그인/회원가입</h1>
-                        <br>
-                        <a href="#login" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
+ 
+    <!-- join-->
+        <div id="join">
+            <div class="logo">
+                <p>감정의 온도</p>
+            </div>
+            <div clas="logo-text">
+                <!-- 감정의 온도를 이용하시려면<br>
+                회원가입이 필요합니다. -->
+            </div>
+            <div class="input-join">
+                <form action="JoinService">
+                    <label>아이디</label>
+                    <input type="text" name="id" required=""> 
+                    <label>비밀번호</label>
+                    <input type="password" name="pw" required="">
+                    <label>닉네임</label>
+                    <input type="text" name="name" required=""> 
+                    <label>핸드폰</label>
+                    <input type="text" name="phone" required=""> 
+                    <label>이메일</label>
+					<input type="text" name="email" required=""> 
+				    <input type="submit" style="display: none;" name="j" id="j">
+                </form>
+                <div class=join-btn onclick="onclick=document.all.j.click()">
+                    <a href="#"><p>회원가입</p></a> 
                 </div>
+                
             </div>
         </div>
-    </header> -->
 
-
-    <!--login&join-->
-   
-    <section id="intro">
-		<div class="intro-container" data-aos="zoom-in" data-aos-delay="100">
-			<div class="login-box">
-				<h2>회원가입</h2>
-				<form action="JoinService">
-					<div class="user-box">
-						<input type="text" name="id" required=""> <label>아이디</label>
-					</div>
-					<div class="user-box">
-						<input type="password" name="pw" required=""> <label>비밀번호</label>
-					</div>
-					<div class="user-box">
-						<input type="password" name="name" required=""> <label>닉네임</label>
-					</div>
-					<div class="user-box">
-						<input type="text" name="phone" required=""> <label>핸드폰</label>
-					</div>
-					<div class="user-box">
-						<input type="text" name="email" required=""> <label>이메일</label>
-					</div>
-					<input type="submit" class="btn btn-info" value="회원가입" style="align-self: center; border-radius: 5px;"> 
-				</form>
-			</div>
-		</div>
-
-	</section>
+    </div>
     <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p class="credits">
-                Shared by <i class="fa fa-love"></i><a href="https://bootstrapthemes.co">BootstrapThemes</a>
-
-            </p>
+    <div id="footer">
+        <div class="contact-sns">
+            <span>트위터 / 페이스북 / 인스타그램</span>
         </div>
-    </footer>
+    </div>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
