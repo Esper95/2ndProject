@@ -1,0 +1,30 @@
+
+
+.dot-items {
+    margin-top : 40px;
+    margin-right : 5px;
+    margin-left : 5px;
+}
+
+.keyword-items {
+    text-align: center;
+}
+
+.liquidFillGaugeText { font-family: Helvetica; font-weight: bold; }
+#ul1,#ul2,#ul3,#ul4{
+    display : none;
+}
+
+.keyword-items {
+    display: none;
+    background-color: black;
+    opacity: 0.3;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    border-radius: 20px;
+}
+
+ul li {
+    color : white
+}
+.dot-items:hover .keyword-items{ display: block; }
