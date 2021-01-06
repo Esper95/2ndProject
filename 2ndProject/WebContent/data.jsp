@@ -37,15 +37,15 @@
                         <h3>분석할 데이터를 추가하세요
                         </h3>
                     </div>
+						<div class="data-up-btn" onclick="onclick=document.all.file.click()">
                     <form action ="http://localhost:9000/predict" method="post" enctype="multipart/form-data"  >	
-					<div class="data-up-btn" onclick="onclick=document.all.file.click()">
-                        <input type="file" style="display: none;" name="file" id="file">
-                        <a href=""  ><p>파일 업로드</p></a> 
-                    </div>
-                    <div class="data-up-btn" onclick="onclick=document.all.upload.click()">
-                    	<input type="submit" style="display: none;" name="upload" id="upload" > 
-                        <a href=""  ><p>파일 전송</p></a> 
-                    </div>
+	                        <input type="file" style="display: none;" name="file" id="file">
+	                        <a href=""  ><p>파일 업로드</p></a> 
+	                    </div>
+	                    <div class="data-up-btn" onclick="onclick=document.all.upload.click()">
+	                    	<input type="submit" style="display: none;" name="upload" id="upload" > 
+	                        <a href=""  ><p>파일 전송</p></a> 
+	                    </div>
                     </form>
                 </div>
             </div>
