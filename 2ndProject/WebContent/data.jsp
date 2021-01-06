@@ -38,13 +38,10 @@
                         </h3>
                     </div>
                     <div class="data-up-btn" onclick="onclick=document.all.file.click()">
-                        <!-- <a href=""  ><p>파일 업로드</p></a> 
-                        <input type="file" style="display: none;" name="file" id="file"> -->
                         <form action ="http://localhost:9000/predict" method="post" enctype="multipart/form-data"  >	
-                    	<input type="file" value="파일 선택" name="file" >
-                    	<p><input type="submit" value="업로드" ></p> 
-      
-                    </form>
+                        <input type="file" style="display: none;" name="file" id="file">
+                        <a href=""  ><p>파일 업로드</p></a> 
+	                   </form>
                     </div>
                 </div>
             </div>
