@@ -1,6 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,109 +7,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>ARIES - Free Bootstrap Theme by WowThemes.net</title>
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="css/theme.css" rel="stylesheet">
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <title>감정의 온도</title>
+
+    <link rel="stylesheet" href="css-sample/style.css" type="text/css">
+    <link rel="stylesheet" href="css-sample/reset.css" type="text/css">
+    <link rel="stylesheet" href="css-sample/home.css" type="text/css">
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-		<i class="fa fa-bars"></i>
-		</button>
-                <a class="navbar-brand page-scroll" href="home.jsp">감정의 온도 </a>
+<body>
+    <div id="contain">
+        <div id="header">
+            <div class="navbar">
+                <p class="logo">
+                    <a href="home-sample.html">감정의 온도</a>   
+                </p>
+                <nav class="menu effect">
+                    <ul>
+                        <li><a href="data-sample.html"><span data-hover="온도계">온도계</span></a></li>
+                        <li><a href="memory-sample.html"><span data-hover="기억창고">기억창고</span></a></li>
+                        <li><a href="contact-sample.html"><span data-hover="연결고리">연결고리</span></a></li>
+                        <li><a href="logout.html"><span data-hover="로그아웃">로그아웃</span></a></li>
+                        <li><a href="login.html"><span data-hover="로그인/회원가입">로그인</span></a></li>
+                        <li><a href="join.html"><span data-hover="로그인/회원가입">회원가입</span></a></li>
+                    </ul>
+                </nav>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="login.jsp">로그인</a>
-                      </li>
-                      <li>
-                        <a href="join.jsp">회원가입</a>
-                      </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Intro Header -->
-    <!-- <header class="intro">
-        <div class="intro-body">
-            <div class="video">
-		<video muted autoplay loop>
-		<source src="aries-html\aries-html\video\sample.mp4" type="video/mp4">
-		<strong>Your browser does not support the video tag.</strong>
-		</video> 일단 비디오 안뜸
-	</div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">로그인/회원가입</h1>
-                        <br>
-                        <a href="#login" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
+ 
+    <!-- join-->
+        <div id="join">
+            <div class="logo">
+                <p>감정의 온도</p>
+            </div>
+            <div clas="logo-text">
+                감정의 온도를 이용하시려면 로그인이 필요합니다.
+            </div>
+            <div class="input-login">
+                <form>
+                    <label>아이디</label>
+                    <input type="text" name="eamil" required=""> 
+                    <label>비밀번호</label>
+                    <input type="password" name="pw" required="">
+                </form>
+                <div class="login-btn">
+                    <a href="#"><p>로그인</p></a> 
                 </div>
+                
             </div>
         </div>
-    </header> -->
 
-
-    <!--login&join-->
-   
-    <section id="intro">
-		<div class="intro-container" data-aos="zoom-in" data-aos-delay="100">
-			<div class="login-box">
-				<h2>로그인</h2>
-				<form action="LoginService" method="post">
-					<div class="user-box">
-						<input type="text" name="id" required=""> <label>아이디</label>
-					</div>
-					<div class="user-box">
-						<input type="password" name="pw" required=""> <label>비밀번호</label>
-					</div>
-					<input type="submit" value="로그인" class="btn btn-info" style="align-self: center; border-radius: 5px;">
-				</form>
-			</div>
-		</div> 
-
-	</section>
+    </div>
     <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p class="credits">
-                Shared by <i class="fa fa-love"></i><a href="https://bootstrapthemes.co">BootstrapThemes</a>
-
-            </p>
-        </div>
-    </footer>
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="js/theme.js"></script>
 </body>
 
 </html>
