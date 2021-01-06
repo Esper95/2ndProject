@@ -1,3 +1,4 @@
+<%@page import="conn.model.memberDTO"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <!DOCTYPE html>
@@ -5,9 +6,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
-<title>ARIES - Free Bootstrap Theme by WowThemes.net</title>
+<title>감정의 온도</title>
 <!-- Bootstrap Core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <!-- Custom CSS -->
@@ -16,24 +15,29 @@
 <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<link rel="stylesheet" href="css-sample/style.css">
+<link rel="stylesheet" href="css-sample/reset.css">
+<link rel="stylesheet" href="css-sample/home.css">
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<!-- Navigation -->
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-<div class="container">
-	<div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-		<i class="fa fa-bars"></i>
-		</button>
-		<a class="navbar-brand page-scroll" href="home.jsp">
-		ARIES </a>
-	</div>
+<%HttpSession session_user = request.getSession();
+  memberDTO user = (memberDTO)session_user.getAttribute("user");%>
+<div id="contain">
+        <div id="header">
+            <div class="navbar">
+                <p class="logo">
+                    <a href="home.jsp">감정의 온도</a>   
+                </p>
+                <nav class="menu effect">
+                    <ul>
+                        <li><a href="data.jsp"><span data-hover="온도계">온도계</span></a></li>
+                        <li><a href="memory.jsp"><span data-hover="기억창고">기억창고</span></a></li>
+                        <li><a href="contact.jsp"><span data-hover="연결고리">연결고리</span></a></li>
+                        <li><a href="LogoutService"><span data-hover="로그아웃">로그아웃</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 		<ul class="nav navbar-nav">

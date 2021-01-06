@@ -1,3 +1,4 @@
+<%@page import="conn.model.memberDTO"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <!DOCTYPE html>
@@ -7,16 +8,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <title>감정의 온도</title>
-
     <link rel="stylesheet" href="css-sample/style.css" type="text/css">
     <link rel="stylesheet" href="css-sample/reset.css" type="text/css">
     <link rel="stylesheet" href="css-sample/home.css" type="text/css">
 </head>
 
 <body>
+<%HttpSession session_user = request.getSession();
+  memberDTO user = (memberDTO)session_user.getAttribute("user");%>
     <div id="contain">
         <div id="header">
             <div class="navbar">
@@ -25,12 +25,15 @@
                 </p>
                 <nav class="menu effect">
                     <ul>
+                        <%if(user!=null){ %>
                         <li><a href="data.jsp"><span data-hover="온도계">온도계</span></a></li>
                         <li><a href="memory.jsp"><span data-hover="기억창고">기억창고</span></a></li>
                         <li><a href="contact.jsp"><span data-hover="연결고리">연결고리</span></a></li>
                         <li><a href="LogoutService"><span data-hover="로그아웃">로그아웃</span></a></li>
+                        <%}else{ %>
                         <li><a href="login.jsp"><span data-hover="로그인/회원가입">로그인</span></a></li>
                         <li><a href="join.jsp"><span data-hover="로그인/회원가입">회원가입</span></a></li>
+                        <%} %>
                     </ul>
                 </nav>
             </div>
@@ -46,18 +49,19 @@
                 회원가입이 필요합니다. -->
             </div>
             <div class="input-join">
-                <form>
+                <form action="JoinService">
                     <label>아이디</label>
                     <input type="text" name="eamil" required=""> 
                     <label>비밀번호</label>
                     <input type="password" name="pw" required="">
                     <label>핸드폰</label>
-                    <input type="text" name="name" required=""> 
+                    <input type="text" name="phone" required=""> 
                     <label>이메일</label>
-					<input type="text" name="name" required=""> 
+					<input type="text" name="email" required=""> 
+				    <input type="submit" style="display: none;" name="j" id="j">
                 </form>
-                <div class=join-btn>
-                    <a href="JoinService"><p>회원가입</p></a> 
+                <div class=join-btn onclick="onclick=document.all.j.click()">
+                    <a href="#"><p>회원가입</p></a> 
                 </div>
                 
             </div>

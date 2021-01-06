@@ -1,3 +1,4 @@
+<%@page import="conn.model.memberDTO"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <!DOCTYPE html>
@@ -5,12 +6,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>감정의 온도</title>
     <link rel="stylesheet" href="css-sample/style.css">
     <link rel="stylesheet" href="css-sample/reset.css">
     <link rel="stylesheet" href="css-sample/home.css">
 </head>
 <body>
+<%HttpSession session_user = request.getSession();
+  memberDTO user = (memberDTO)session_user.getAttribute("user");%>
     <div id="contain">
         <div id="header">
             <div class="navbar">
@@ -23,8 +26,6 @@
                         <li><a href="memory.jsp"><span data-hover="기억창고">기억창고</span></a></li>
                         <li><a href="contact.jsp"><span data-hover="연결고리">연결고리</span></a></li>
                         <li><a href="LogoutService"><span data-hover="로그아웃">로그아웃</span></a></li>
-                        <li><a href="login.jsp"><span data-hover="로그인/회원가입">로그인</span></a></li>
-                        <li><a href="join.jsp"><span data-hover="로그인/회원가입">회원가입</span></a></li>
                     </ul>
                 </nav>
             </div>
