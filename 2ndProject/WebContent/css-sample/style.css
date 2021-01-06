@@ -21,12 +21,21 @@
     left: 0;
     width: 100%;
     height: 60px;
-    background: #fff;
     border-bottom: 1px solid #ddd;
     z-index: 100;
     min-width: 1260px;
 }
 
+#header::before {
+    content: '';
+    background-color: rgba(230, 219, 219, 0.8);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
 
 
 #header .navbar {
@@ -36,6 +45,7 @@ margin: 0 auto;
 }
 
 #header .navbar p.logo {
+    
     position: absolute;
     left: 0;
     top: 15px;
@@ -72,7 +82,7 @@ margin: 0 auto;
 
 #header > div > nav > ul > li > a > span:hover {
     font-size : 20px;
-    color : rgb(219, 92, 70);
+    color: rgb(228, 187, 5);
 }
 
 #footer{
@@ -102,7 +112,7 @@ margin: 0 auto;
 
 
 #sub-title .t-area {
-    position: ab;
+    position: absolute;
     width: 1200px;
     height: 100px;
     margin: 50px auto;
@@ -128,7 +138,6 @@ margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(206, 206, 206);
 }
 
 
@@ -161,7 +170,7 @@ margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(206, 206, 206);
+    background-color: whitesmoke;
 }
 
 #contain .temperature-b iframe {

@@ -12,7 +12,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
     font-family: 'Jal_Haru';
-    background: #fff;
+    background: whitesmoke;
     font-style: normal;
     font-size: 16px;
     color: hsl(0, 0%, 49%);
@@ -47,3 +47,21 @@ img, button, input.type-image {
 img {
     vertical-align: middle;
 }
+
+
+
+/* body {
+    background-image: url(https://liquidplanner-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/iStock-1014903134.jpg);
+    
+}
+body::before {
+    content: '';
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    
+} */
