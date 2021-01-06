@@ -27,7 +27,7 @@ public class DataUpload extends HttpServlet {
 		//절대경로
 		//String path = request.getRealPath("File");
 		//상대경로
-		String path = "C:\\Users\\SMT055\\NewPython";
+		String path = "C:\\Users\\SMT055\\NewPython\\머신러닝\\data\\project";
 		
 		
 		//System.out.println("절대경로 : " + path + "<br/>");
@@ -47,24 +47,23 @@ public class DataUpload extends HttpServlet {
 			
 			 //originalFileName = multi.getOriginalFileName(str);
 			 
-			 String newFileName ="\\data.txt";
+			 //String newFileName ="\\data.txt";
 			 
 			 //int index = fileName.indexOf(".");
 			 //String txt = fileName.substring(index,fileName.length()); //확장자만 남기고 다 삭제
 			 //System.out.println(txt);
 			 //String newfile = newFileName + txt;
 			 
-			 File oldFile = new File(path + fileName);
-			 File newFile = new File(path + newFileName);
-			
-		     
-			 boolean success = oldFile.renameTo(newFile);
-			 
-			 if(success == true) {
-				 oldFile.renameTo(newFile);
-			 }else {
-				System.out.println("바뀌지 않았습니다.");
-			 }
+				/*
+				 * File oldFile = new File(path + fileName); File newFile = new File(path +
+				 * newFileName);
+				 * 
+				 * 
+				 * boolean success = oldFile.renameTo(newFile);
+				 * 
+				 * if(success == true) { oldFile.renameTo(newFile); }else {
+				 * System.out.println("바뀌지 않았습니다."); }
+				 */
 		  
 
 		 }catch(Exception e){
