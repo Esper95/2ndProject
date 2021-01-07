@@ -55,7 +55,7 @@
                     <input type="text" name="id" required=""> 
                     <label>비밀번호</label>
                     <input type="password" name="pw" required=""> 
-                    <input type="submit" style="display: none;" name="l" id="l">
+                    <input type="submit" style="display: none;" id="l">
                 </form>
                 <div class=join-btn onclick="onclick=document.all.l.click()">
                     <a href="#"><p>로그인</p></a> 

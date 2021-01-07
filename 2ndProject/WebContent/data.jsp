@@ -37,15 +37,19 @@
                         <h3>분석할 데이터를 추가하세요
                         </h3>
                     </div>
-                    <div class="data-up-btn" onclick="onclick=document.all.file.click()">
-                        <!-- <a href=""  ><p>파일 업로드</p></a> 
-                        <input type="file" style="display: none;" name="file" id="file"> -->
-                        <form action ="http://localhost:9000/predict" method="post" enctype="multipart/form-data"  >	
-                    	<input type="file" value="파일 선택" name="file" >
-                    	<p><input type="submit" value="업로드" ></p> 
-      
+                    <div>
+ 					<form action ="http://localhost:9000/predict" method="post" enctype="multipart/form-data"  >	
+                    	<input type="file" value="파일 선택" name="file" id="file" style="">
+                    	<input type="submit" value="업로드" id="upload" style=""></p> 
                     </form>
                     </div>
+                    
+                    <div class=join-btn onclick="onclick=document.all.file.click()">
+                    	<a href="#"><p>데이터 업로드</p></a> 
+              		</div>
+              		<div class=join-btn onclick="onclick=document.all.upload.click()">
+                    	<a href="#"><p>데이터 전송</p></a> 
+              		</div>
                 </div>
             </div>
         </div>
