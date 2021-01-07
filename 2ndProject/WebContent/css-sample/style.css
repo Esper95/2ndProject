@@ -279,8 +279,7 @@ margin: 0 auto;
 #join .input-join label {
     display: block;
     clear: both;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 18px;
     padding-left: 10px;
     color : gray;
 }
