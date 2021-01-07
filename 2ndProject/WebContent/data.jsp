@@ -44,15 +44,10 @@
                     </form>
                     </div>
                     
-                    <div class=join-btn onclick="onclick=document.all.file.click()">
-                    	<a href="#"><p>데이터 업로드</p></a> 
-              		</div>
-              		<div class=join-btn onclick="onclick=document.all.upload.click()">
-                    	<a href="#"><p>데이터 전송</p></a> 
-              		</div>
                 </div>
             </div>
         </div>
+    </div>
         <div class="container">
             <div class="data-result">
                 <h2>감정온도 측정 결과</h2>
@@ -64,7 +59,6 @@
                 <a href="#"><p>온도 저장하기</p></a>
             </div>
         </div>
-    </div>
         <div id="footer">
             <div class="contact-sns">
                 <span>트위터 / 페이스북 / 인스타그램</span>

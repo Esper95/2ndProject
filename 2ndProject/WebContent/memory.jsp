@@ -53,8 +53,5 @@
                 <span>트위터 / 페이스북 / 인스타그램</span>
             </div>
         </div>
-</div>
-    </div>
-    
 </body>
 </html>
