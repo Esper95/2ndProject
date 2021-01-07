@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" href="data.css" type="text/css">
+    <link rel="stylesheet" href="../css-sample/data.css">
     <script src="https://d3js.org/d3.v3.min.js" language="JavaScript"></script>
     <script src="liquidFillGauge.js" language="JavaScript"></script>
     <style>
@@ -17,13 +17,15 @@
         ul li {
             font-size : 20px;
         }
+
+        
     </style>
 </head>
 <body style="background-color: whitesmoke;">
     <div class="dot-box" style="display: flex; text-align : center; justify-content: center; ">
         <div class ="dot-items">
             <svg id="fillgauge2" width="200px" height="200" onclick="gauge2.update(NewValue());"></svg>
-            <div class="keyword-items">
+            <div class="keyword-items red">
                 <ul>   
                     <li>음식</li>
                     <li>퇴근</li>
@@ -34,7 +36,7 @@
 
         <div class ="dot-items">
             <svg id="fillgauge3" width="200px" height="200" onclick="gauge3.update(NewValue());"></svg>
-            <div class="keyword-items">
+            <div class="keyword-items yellow">
                 <ul>   
                     <li>음식</li>
                     <li>퇴근</li>
@@ -44,7 +46,7 @@
         </div>
         <div class ="dot-items">
             <svg id="fillgauge4" width="200px" height="200" onclick="gauge4.update(NewValue());"></svg>
-            <div class="keyword-items">
+            <div class="keyword-items green">
                 <ul>   
                     <li>음식</li>
                     <li>퇴근</li>
@@ -54,7 +56,7 @@
         </div>
         <div class ="dot-items">
             <svg id="fillgauge5" width="200px"height="200" onclick="gauge5.update(NewValue());"></svg>
-            <div class="keyword-items">
+            <div class="keyword-items blue">
                 <ul>   
                     <li>음식</li>
                     <li>퇴근</li>
