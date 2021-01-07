@@ -30,24 +30,26 @@
                 </nav>
             </div>
         </div>
-        <div id="sub">
+   	    <div id="sub">
             <div id="sub-title">
-                <div class="t-area">
-                    <div class="data-up-text">
+                <div class="t-area" style="display: flex">
+                    <div class="data-up-text" style= "padding-top: 23px">
                         <h3>분석할 데이터를 추가하세요
                         </h3>
                     </div>
-                    <div>
- 					<form action ="http://localhost:9000/predict" method="post" enctype="multipart/form-data"  >	
-                    	<input type="file" value="파일 선택" name="file" id="file" style="">
-                    	<input type="submit" value="업로드" id="upload" style=""></p> 
-                    </form>
+                	<form action="http://localhost:9000/predict" method="post" enctype="multipart/form-data">
+                    <div class="data-up-btn" onclick="onclick=document.all.file.click()">
+                        <input type="file" style="display: none;" name="file" id="file">
+                        <a href=""><p>파일 선택</p></a> 
                     </div>
-                    
+                    <div class="data-up-btn" onclick="onclick=document.all.uplodad.click()">
+                        <input type="submit" style="display: none;" name="upload" id="upload">
+                        <a href=""><p>파일 전송</p></a> 
+                    </div>
+                   </form>
                 </div>
             </div>
         </div>
-    </div>
         <div class="container">
             <div class="data-result">
                 <h2>감정온도 측정 결과</h2>
@@ -59,6 +61,7 @@
                 <a href="#"><p>온도 저장하기</p></a>
             </div>
         </div>
+    </div>
         <div id="footer">
             <div class="contact-sns">
                 <span>트위터 / 페이스북 / 인스타그램</span>
