@@ -36,7 +36,7 @@
                     <div class="data-up-text" style= "padding-top: 23px">
                         <h3>분석할 데이터를 추가하세요</h3>
                     </div>
-                	<form action="http://localhost:9000/predict" method="post" enctype="multipart/form-data">
+                	<form action="http://118.40.82.69:9000/predict" method="post" enctype="multipart/form-data">
                     <div class="data-up-btn" onclick="onclick=document.all.file.click()">
                         <input type="file"  name="file" id="file">
                         <input type="submit"  name="upload" id="upload">

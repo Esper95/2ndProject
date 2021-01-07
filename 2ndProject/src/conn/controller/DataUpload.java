@@ -27,7 +27,7 @@ public class DataUpload extends HttpServlet {
 		//절대경로
 		//String path = request.getRealPath("File");
 		//상대경로
-		String path = "C:\\Users\\SMT055\\NewPython\\머신러닝\\data\\project";
+		String path = "C:\\Users\\SMT055\\python\\머신러닝\\data\\project";
 		
 		
 		//System.out.println("절대경로 : " + path + "<br/>");
