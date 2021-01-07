@@ -13,7 +13,9 @@
 </head>
 <body>
 <%HttpSession session_user = request.getSession();
-  memberDTO user = (memberDTO)session_user.getAttribute("user");%>
+  memberDTO user = (memberDTO)session_user.getAttribute("user");
+    
+  %>
     <div id="contain">
         <div id="header">
             <div class="navbar">
@@ -37,7 +39,7 @@
                         <h3>분석할 데이터를 추가하세요</h3>
                     </div>
                 	<form action="http://118.40.82.69:9000/predict" method="post" enctype="multipart/form-data">
-                    <div class="data-up-btn" onclick="onclick=document.all.file.click()">
+                    <div class="data-up-btn">
                         <input type="file"  name="file" id="file">
                         <input type="submit"  name="upload" id="upload">
                     </div>
@@ -50,7 +52,7 @@
                 <h2>감정온도 측정 결과</h2>
             </div>
             <div class="temperature">
-                <iframe src="graph\dot.html"></iframe>
+                <iframe src="graph\dot.jsp"></iframe>
             </div>
             <div class="save-file-btn">
                 <a href="#"><p>온도 저장하기</p></a>
