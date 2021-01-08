@@ -24,7 +24,15 @@
 	String worry1 =request.getParameter("worry1");
 	String worry2 =request.getParameter("worry2");
 	String worry3 =request.getParameter("worry3");
-	String angry1 =request.getParameter("worry1");
+	String angry1 =request.getParameter("angry1");
+	String angry2 =request.getParameter("angry2");
+	String angry3 =request.getParameter("angry3");
+	String sad1 =request.getParameter("sad1");
+	String sad2 =request.getParameter("sad2");
+	String sad3 =request.getParameter("sad3");
+	String happy1 =request.getParameter("happy1");
+	String happy2 =request.getParameter("happy2");
+	String happy3 =request.getParameter("happy3");
  %>
     <div id="contain">
         <div id="header">
@@ -63,7 +71,10 @@
             </div>
             <div class="temperature">
                 <iframe src="graph/dot.jsp?worry=<%=worry%>&angry=<%=angry %>&sad=<%=sad%>&happy=<%=happy%>
-                			 "> </iframe>
+                			 &worry1=<%=worry1%>&worry2=<%=worry2%>&worry3=<%=worry3%>
+							 &angry1=<%=angry1%>&angry2=<%=angry2%>&angry3=<%=angry3%>
+							 &sad1=<%=sad1%>&sad2=<%=sad2%>&sad3=<%=sad3%>
+							 &happy1=<%=happy1%>&happy2=<%=happy2%>&happy3=<%=happy3%> "> </iframe>
             </div>
             <div class="save-file-btn">
                 <a href="#"><p>온도 저장하기</p></a>
@@ -71,7 +82,7 @@
         </div>
     </div>
         <div id="footer">
-            <div class="contact-sns">
+            <div class="contact-sns">s
                 <span>트위터 / 페이스북 / 인스타그램</span>
             </div>
         </div>

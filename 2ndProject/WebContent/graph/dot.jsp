@@ -25,7 +25,20 @@ ul li {
 </style>
 </head>
 <body style="background-color: whitesmoke;">
-
+<%
+request.setCharacterEncoding("UTF-8");
+String worry1 =request.getParameter("worry1");
+String worry2 =request.getParameter("worry2");
+String worry3 =request.getParameter("worry3");
+String angry1 =request.getParameter("angry1");
+String angry2 =request.getParameter("angry2");
+String angry3 =request.getParameter("angry3");
+String sad1 =request.getParameter("sad1");
+String sad2 =request.getParameter("sad2");
+String sad3 =request.getParameter("sad3");
+String happy1 =request.getParameter("happy1");
+String happy2 =request.getParameter("happy2");
+String happy3 =request.getParameter("happy3"); %>
 	<div class="dot-box"
 		style="display: flex; text-align: center; justify-content: center;">
 		<div class="dot-items">
@@ -33,9 +46,9 @@ ul li {
 				onclick="gauge2.update(NewValue());"></svg>
 			<div class="keyword-items red">
 				<ul>
-					<li>음식</li>
-					<li>퇴근</li>
-					<li>잠</li>
+					<li><%=happy1%></li>
+					<li><%=happy2%></li>
+					<li><%=happy3%></li>
 				</ul>
 			</div>
 		</div>
@@ -45,9 +58,9 @@ ul li {
 				onclick="gauge3.update(NewValue());"></svg>
 			<div class="keyword-items yellow">
 				<ul>
-					<li>음식</li>
-					<li>퇴근</li>
-					<li>잠</li>
+					<li><%=angry1%></li>
+					<li><%=angry2%></li>
+					<li><%=angry3%></li>
 				</ul>
 			</div>
 		</div>
@@ -56,9 +69,9 @@ ul li {
 				onclick="gauge4.update(NewValue());"></svg>
 			<div class="keyword-items green">
 				<ul>
-					<li>음식</li>
-					<li>퇴근</li>
-					<li>잠</li>
+					<li><%=sad1%></li>
+					<li><%=sad2%></li>
+					<li><%=sad3%></li>
 				</ul>
 			</div>
 		</div>
@@ -67,9 +80,9 @@ ul li {
 				onclick="gauge5.update(NewValue());"></svg>
 			<div class="keyword-items blue">
 				<ul>
-					<li>음식</li>
-					<li>퇴근</li>
-					<li>잠</li>
+					<li><%=worry1%></li>
+					<li><%=worry2%></li>
+					<li><%=worry3%></li>
 				</ul>
 			</div>
 		</div>
