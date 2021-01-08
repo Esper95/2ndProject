@@ -96,19 +96,19 @@ String happy3 =request.getParameter("happy3"); %>
 	%>
 	<script language="JavaScript">
     var config1 = liquidFillGaugeDefaultSettings();
-    config1.circleColor = "#FE696D";
-    config1.textColor = "#FE696D";
-    config1.waveTextColor = "#FE696D";
-    config1.waveColor = "#FFDDDD";
+    config1.circleColor = "#FCD34D";
+    config1.textColor = "#FCD34D";
+    config1.waveTextColor = "#FCD34D";
+    config1.waveColor = "#fef1c8";
     config1.circleThickness = 0.2;
     config1.textVertPosition = 0.2;
     config1.waveAnimateTime = 1000;
     var gauge2= loadLiquidFillGauge("fillgauge2", <%=happy%>, config1);
     var config2 = liquidFillGaugeDefaultSettings();
-    config2.circleColor = "#FCD34D";
-    config2.textColor = "#FCD34D";
-    config2.waveTextColor = "#FCD34D";
-    config2.waveColor = "#fef1c8";
+    config2.circleColor = "#FE696D";
+    config2.textColor = "#FE696D";
+    config2.waveTextColor = "#FE696D";
+    config2.waveColor = "#FFDDDD";
     config2.circleThickness = 0.2;
     config2.textVertPosition = 0.2;
     config2.waveAnimateTime = 1000;

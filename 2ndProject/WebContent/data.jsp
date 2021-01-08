@@ -70,11 +70,7 @@
                 <h2>감정온도 측정 결과</h2>
             </div>
             <div class="temperature">
-                <iframe src="graph/dot.jsp?worry=<%=worry%>&angry=<%=angry %>&sad=<%=sad%>&happy=<%=happy%>
-                			 &worry1=<%=worry1%>&worry2=<%=worry2%>&worry3=<%=worry3%>
-							 &angry1=<%=angry1%>&angry2=<%=angry2%>&angry3=<%=angry3%>
-							 &sad1=<%=sad1%>&sad2=<%=sad2%>&sad3=<%=sad3%>
-							 &happy1=<%=happy1%>&happy2=<%=happy2%>&happy3=<%=happy3%> "> </iframe>
+                <iframe src="graph/dot.jsp?worry=<%=worry%>&angry=<%=angry %>&sad=<%=sad%>&happy=<%=happy%>&worry1=<%=worry1%>&worry2=<%=worry2%>&worry3=<%=worry3%>&angry1=<%=angry1%>&angry2=<%=angry2%>&angry3=<%=angry3%>&sad1=<%=sad1%>&sad2=<%=sad2%>&sad3=<%=sad3%>&happy1=<%=happy1%>&happy2=<%=happy2%>&happy3=<%=happy3%>"></iframe>
             </div>
             <div class="save-file-btn">
                 <a href="#"><p>온도 저장하기</p></a>
