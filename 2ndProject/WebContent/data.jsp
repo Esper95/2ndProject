@@ -1,3 +1,4 @@
+<%@page import="conn.model.dataDTO"%>
 <%@page import="conn.model.memberDTO"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
@@ -8,13 +9,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>감정의 온도</title>
 	<link rel="stylesheet" href="css-sample/totalStyle.css" type="text/css">
-	
+
+    <script src="js/jquery-3.5.1.min.js"></script>
 </head>
-<body>
-<%HttpSession session_user = request.getSession();
-  memberDTO user = (memberDTO)session_user.getAttribute("user");%>
-  
+<body >
 	<!-- 전체 contain -->
+<%HttpSession session_user = request.getSession(); 
+memberDTO user = (memberDTO)session_user.getAttribute("user");
+  	//카카오톡 빈 간격 시간
+  	String hour =request.getParameter("hour");
+  	String minutes =request.getParameter("minutes");
+  	String second =request.getParameter("second");
+  	// 카카오톡 문장 개수
+  	String countMe =request.getParameter("countMe");
+  	String countYou=request.getParameter("countYou");
+  	// ㅋㅋㅋ 개수
+  	String kikiCount = request.getParameter("kikiCount");
+  	// 감정 분류 개수
+    String worry =request.getParameter("worry");
+	String angry =request.getParameter("angry");
+	String sad =request.getParameter("sad");
+	String happy =request.getParameter("happy");
+	// 감정 주요 키워드
+	String worry1 =request.getParameter("worry1");
+	String worry2 =request.getParameter("worry2");
+	String worry3 =request.getParameter("worry3");
+	String angry1 =request.getParameter("angry1");
+	String angry2 =request.getParameter("angry2");
+	String angry3 =request.getParameter("angry3");
+	String sad1 =request.getParameter("sad1");
+	String sad2 =request.getParameter("sad2");
+	String sad3 =request.getParameter("sad3");
+	String happy1 =request.getParameter("happy1");
+	String happy2 =request.getParameter("happy2");
+	String happy3 =request.getParameter("happy3");
+	// 낮 저녁 카톡 개수
+	String morningMe = request.getParameter("morningMe");
+	String morningYou =request.getParameter("morningYou");
+	String nightMe = request.getParameter("nightMe");
+	String nightYou = request.getParameter("nightYou");
+ %>
     <div id="contain">
     
         <!-- 섹션 01 로고/메뉴 -->
@@ -93,6 +127,7 @@
    	    	</div>
 
         <!-- 섹션 03 footer -->
+
         <div id="footer">
             <div class="footer-box">
                 <span>트위터</span>
@@ -104,5 +139,6 @@
         <!-- 전체 contain 끝 -->
     </div>
     </div>
+    
 </body>
 </html>

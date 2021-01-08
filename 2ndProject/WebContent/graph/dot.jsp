@@ -1,3 +1,4 @@
+<%@page import="conn.model.dataDTO"%>
 <%@page
 	import="org.eclipse.jdt.internal.compiler.parser.ParserBasicInformation"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -24,92 +25,92 @@ ul li {
 </style>
 </head>
 <body style="background-color: whitesmoke;">
-	<script type="text/javascript"></script>
 
-                			<div class="dot-box"
-							style="display: flex; text-align: center; justify-content: center;">
-							<div class="dot-items">
-								<svg id="fillgauge2" width="200px" height="200"
-									onclick="gauge2.update(NewValue());"></svg>
-								<div class="keyword-items red">
-									<ul>
-										<li>음식</li>
-										<li>퇴근</li>
-										<li>잠</li>
-									</ul>
-								</div>
-							</div>
-					
-							<div class="dot-items">
-								<svg id="fillgauge3" width="200px" height="200"
-									onclick="gauge3.update(NewValue());"></svg>
-								<div class="keyword-items yellow">
-									<ul>
-										<li>음식</li>
-										<li>퇴근</li>
-										<li>잠</li>
-									</ul>
-								</div>
-							</div>
-							<div class="dot-items">
-								<svg id="fillgauge4" width="200px" height="200"
-									onclick="gauge4.update(NewValue());"></svg>
-								<div class="keyword-items green">
-									<ul>
-										<li>음식</li>
-										<li>퇴근</li>
-										<li>잠</li>
-									</ul>
-								</div>
-							</div>
-							<div class="dot-items">
-								<svg id="fillgauge5" width="200px" height="200"
-									onclick="gauge5.update(NewValue());"></svg>
-								<div class="keyword-items blue">
-									<ul>
-										<li>음식</li>
-										<li>퇴근</li>
-										<li>잠</li>
-									</ul>
-								</div>
-							</div>
-						</div>
+<%
+request.setCharacterEncoding("UTF-8");
+String worry1 =request.getParameter("worry1");
+String worry2 =request.getParameter("worry2");
+String worry3 =request.getParameter("worry3");
+String angry1 =request.getParameter("angry1");
+String angry2 =request.getParameter("angry2");
+String angry3 =request.getParameter("angry3");
+String sad1 =request.getParameter("sad1");
+String sad2 =request.getParameter("sad2");
+String sad3 =request.getParameter("sad3");
+String happy1 =request.getParameter("happy1");
+String happy2 =request.getParameter("happy2");
+String happy3 =request.getParameter("happy3"); %>
+	<div class="dot-box"
+		style="display: flex; text-align: center; justify-content: center;">
+		<div class="dot-items">
+			<svg id="fillgauge2" width="200px" height="200"
+				onclick="gauge2.update(NewValue());"></svg>
+			<div class="keyword-items red">
+				<ul>
+					<li><%=happy1%></li>
+					<li><%=happy2%></li>
+					<li><%=happy3%></li>
+				</ul>
+			</div>
+		</div>
 
+		<div class="dot-items">
+			<svg id="fillgauge3" width="200px" height="200"
+				onclick="gauge3.update(NewValue());"></svg>
+			<div class="keyword-items yellow">
+				<ul>
+					<li><%=angry1%></li>
+					<li><%=angry2%></li>
+					<li><%=angry3%></li>
+				</ul>
+			</div>
+		</div>
+		<div class="dot-items">
+			<svg id="fillgauge4" width="200px" height="200"
+				onclick="gauge4.update(NewValue());"></svg>
+			<div class="keyword-items green">
+				<ul>
+					<li><%=sad1%></li>
+					<li><%=sad2%></li>
+					<li><%=sad3%></li>
+				</ul>
+			</div>
+		</div>
+		<div class="dot-items">
+			<svg id="fillgauge5" width="200px" height="200"
+				onclick="gauge5.update(NewValue());"></svg>
+			<div class="keyword-items blue">
+				<ul>
+					<li><%=worry1%></li>
+					<li><%=worry2%></li>
+					<li><%=worry3%></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
 	<%
 	String worry =request.getParameter("worry");
-	System.out.println(worry);
 	String angry =request.getParameter("angry");
 	String sad =request.getParameter("sad");
 	String happy =request.getParameter("happy");
 	
-	HttpSession session_data = request.getSession();
-	session_data.setAttribute("worry", worry);
-	session_data.setAttribute("angry", angry);
-	session_data.setAttribute("sad", sad);
-	session_data.setAttribute("happy", happy);
-	
 	%>
 	<script language="JavaScript">
-	  <%-- 	var concern = '<%=request.getParameter("worry")%>';
-	  	var upset = '<%=request.getParameter("angry")%>';
-	  	var sad = '<%=request.getParameter("sad")%>';
-	  	var happy = '<%=request.getParameter("happy")%>'; --%>
-    	
     var config1 = liquidFillGaugeDefaultSettings();
-    config1.circleColor = "#FE696D";
-    config1.textColor = "#FE696D";
-    config1.waveTextColor = "#FE696D";
-    config1.waveColor = "#FFDDDD";
+    config1.circleColor = "#FCD34D";
+    config1.textColor = "#FCD34D";
+    config1.waveTextColor = "#FCD34D";
+    config1.waveColor = "#fef1c8";
     config1.circleThickness = 0.2;
     config1.textVertPosition = 0.2;
     config1.waveAnimateTime = 1000;
     var gauge2= loadLiquidFillGauge("fillgauge2", <%=happy%>, config1);
     var config2 = liquidFillGaugeDefaultSettings();
-    config2.circleColor = "#FCD34D";
-    config2.textColor = "#FCD34D";
-    config2.waveTextColor = "#FCD34D";
-    config2.waveColor = "#fef1c8";
+    config2.circleColor = "#FE696D";
+    config2.textColor = "#FE696D";
+    config2.waveTextColor = "#FE696D";
+    config2.waveColor = "#FFDDDD";
     config2.circleThickness = 0.2;
     config2.textVertPosition = 0.2;
     config2.waveAnimateTime = 1000;
@@ -151,11 +152,7 @@ ul li {
     // config4.textSize = 0.75;
     // config4.waveCount = 3;
      var gauge5= loadLiquidFillGauge("fillgauge5", <%=worry%>, config4);
-
    	</script>
-   	<% if(worry != null){
-   		response.sendRedirect("../data.jsp");
-   	}
-   	%>
+   
 </body>
 </html>
