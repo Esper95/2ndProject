@@ -111,7 +111,9 @@ memberDTO user = (memberDTO)session_user.getAttribute("user");
    	    		<!-- 온도계 -->
    	    		<div class="result-01">
    	    			<div class="result-title">우리의 감정온도</div>
-   	    			<div class="result-img">이미지/온도계 출력</div>
+   	    			<div class="result-img">
+   	    				<iframe src="graph\temperature.html"></iframe>
+   	    			</div>
    	    		</div>
    	    	
    	    		<!-- 감정차트 + 저장 -->
@@ -120,13 +122,15 @@ memberDTO user = (memberDTO)session_user.getAttribute("user");
                 		<iframe src="graph\dot.jsp"></iframe>
             		</div>
    	    		</div>
-   	    		<form action="DataSave">
-   	    		<input type="text" name = "partner">
-   	    		<input type="submit" style="display: none;" id="save" placeholder="상대방 이름을 입력해주세요">
-   	    		</form>
-   	    		<div class="save-file-btn" onclick="onclick=document.all.save.click()">
-	                <a href="#">온도 저장하기</a>
-	            </div>
+   	    		<div class="data-save">
+   	    			<form action="DataSave">
+   	    				<p>상대방 이름을 입력하세요</p>
+   	    				<input type="text" name = "partner">
+   	    				<input type="submit" style="display: none;" id="save" >
+   	    				<p>온도 저장하기</p>
+   	    			</form>
+   	    		</div>
+   	    		
    	    	
    	    	</div>
 

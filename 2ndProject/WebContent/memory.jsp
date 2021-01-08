@@ -49,12 +49,17 @@
    	    <div id="main">
    	    
    	    	<div class="relation">
-   	    		<div class="relation-title">
-   	 				<h2>감정관계도</h2>
-   	    		</div>
-   	    		<div class="relation-text">
-					우리의 관계는 블라블라 블라 
-               </div>
+   	    		<div class="relation01">
+	   	    		<div class="relation-title">
+	   	 				<h2>감정관계도</h2>
+	   	    		</div>
+	   	    		<div class="relation-text">
+						우리의 관계는 블라블라 블라 
+	               </div>
+	           </div>
+	           <div class="relation02">
+	           		<input type="submit"  name="relation-btn" id="relation-btn">
+	           </div>
    	    	</div>
    	    	
    	    	

@@ -50,15 +50,15 @@
         <!-- 섹션 02 회원가입 -->
    	    <div id="main">
    	    
-	        <div id="join">
+	        <div class="login">
 	            <div class="logo">
-	                <p>감정의 온도</p>
+	                감정의 온도
 	            </div>
 	            <div clas="logo-text">
 	                <!-- 감정의 온도를 이용하시려면<br>
 	                회원가입이 필요합니다. -->
 	            </div>
-	            <div class="input-join">
+	            <div class="input-login">
 	                <form action="LoginService">
 	                    <label>아이디</label>
 	                    <input type="text" name="id" required=""> 
