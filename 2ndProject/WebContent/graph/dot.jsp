@@ -1,3 +1,4 @@
+<%@page import="conn.model.dataDTO"%>
 <%@page
 	import="org.eclipse.jdt.internal.compiler.parser.ParserBasicInformation"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -24,9 +25,6 @@ ul li {
 </style>
 </head>
 <body style="background-color: whitesmoke;">
-	<script type="text/javascript">
-
-</script>
 
 	<div class="dot-box"
 		style="display: flex; text-align: center; justify-content: center;">
@@ -78,24 +76,12 @@ ul li {
 	</div>
 	<%
 	String worry =request.getParameter("worry");
-	System.out.println(worry);
 	String angry =request.getParameter("angry");
 	String sad =request.getParameter("sad");
 	String happy =request.getParameter("happy");
 	
-	HttpSession session_data = request.getSession();
-	session_data.setAttribute("worry", worry);
-	session_data.setAttribute("angry", angry);
-	session_data.setAttribute("sad", sad);
-	session_data.setAttribute("happy", happy);
-	
 	%>
 	<script language="JavaScript">
-	  <%-- 	var concern = '<%=request.getParameter("worry")%>';
-	  	var upset = '<%=request.getParameter("angry")%>';
-	  	var sad = '<%=request.getParameter("sad")%>';
-	  	var happy = '<%=request.getParameter("happy")%>'; --%>
-    	
     var config1 = liquidFillGaugeDefaultSettings();
     config1.circleColor = "#FE696D";
     config1.textColor = "#FE696D";
@@ -151,11 +137,7 @@ ul li {
     // config4.textSize = 0.75;
     // config4.waveCount = 3;
      var gauge5= loadLiquidFillGauge("fillgauge5", <%=worry%>, config4);
-
    	</script>
-   	<% if(worry != null){
-   		response.sendRedirect("../data.jsp");
-   	}
-   	%>
+   
 </body>
 </html>

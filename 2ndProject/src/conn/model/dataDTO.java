@@ -1,53 +1,44 @@
 package conn.model;
 
 public class dataDTO {
-	private String id;
-	private String pw;
-	private String phone;
-	private String email;
-	
-	
-	
-	
-	public dataDTO(String id, String pw, String phone, String email) {
+	private String worry;
+	private String angry;
+	private String sad;
+	private String happy;
+	public dataDTO(String worry, String angry, String sad, String happy) {
 		super();
-		this.id = id;
-		this.pw = pw;
-		this.phone = phone;
-		this.email = email;
+		this.worry = worry;
+		this.angry = angry;
+		this.sad = sad;
+		this.happy = happy;
+	}
+	public String getWorry() {
+		return worry;
+	}
+	public void setWorry(String worry) {
+		this.worry = worry;
+	}
+	public String getAngry() {
+		return angry;
+	}
+	public void setAngry(String angry) {
+		this.angry = angry;
+	}
+	public String getSad() {
+		return sad;
+	}
+	public void setSad(String sad) {
+		this.sad = sad;
+	}
+	public String getHappy() {
+		return happy;
+	}
+	public void setHappy(String happy) {
+		this.happy = happy;
 	}
 	
-	public dataDTO(String id, String pw) {
-		super();
-		this.id = id;
-		this.pw = pw;
-		
-	}
 	
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
-	public String getPw() {
-		return pw;
-	}
-	public void setPw(String pw) {
-		this.pw = pw;
-	}
-	public String getPhone() {
-		return phone;
-	}
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
+	
 	
 	
 }

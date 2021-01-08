@@ -1,3 +1,4 @@
+<%@page import="conn.model.dataDTO"%>
 <%@page import="conn.model.memberDTO"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
@@ -10,12 +11,21 @@
     <link rel="stylesheet" href="css-sample/style.css">
     <link rel="stylesheet" href="css-sample/reset.css">
     <link rel="stylesheet" href="css-sample/home.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
 <%HttpSession session_user = request.getSession();
   memberDTO user = (memberDTO)session_user.getAttribute("user");
-    
-  %>
+  
+    String worry =request.getParameter("worry");
+	String angry =request.getParameter("angry");
+	String sad =request.getParameter("sad");
+	String happy =request.getParameter("happy");
+	String worry1 =request.getParameter("worry1");
+	String worry2 =request.getParameter("worry2");
+	String worry3 =request.getParameter("worry3");
+	String angry1 =request.getParameter("worry1");
+ %>
     <div id="contain">
         <div id="header">
             <div class="navbar">
@@ -52,7 +62,8 @@
                 <h2>감정온도 측정 결과</h2>
             </div>
             <div class="temperature">
-                <iframe src="graph\dot.jsp"></iframe>
+                <iframe src="graph/dot.jsp?worry=<%=worry%>&angry=<%=angry %>&sad=<%=sad%>&happy=<%=happy%>
+                			 "> </iframe>
             </div>
             <div class="save-file-btn">
                 <a href="#"><p>온도 저장하기</p></a>
@@ -65,5 +76,6 @@
             </div>
         </div>
     </div>
+    
 </body>
 </html>
