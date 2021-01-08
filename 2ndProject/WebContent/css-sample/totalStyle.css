@@ -76,7 +76,7 @@
  #header .top ul {
      display: flex;
      justify-content: flex-end;
-     padding: 0 100px;
+     padding: 0 150px;
  }
 
  #header .top ul li {
@@ -93,15 +93,16 @@
  }
 
  #header .menu .logo {
-     margin-left: 100px;
+     margin-left: 150px;
  }
 
  #header .menu .logo a {
     font-size: 40px;
 }
 
+
  #header .menu .navbar {
-    margin-right: 100px;
+    margin-right: 150px;
 }
  
  #header .menu .navbar ul {
@@ -110,12 +111,14 @@
  #header .menu .navbar ul li {
      margin-right: 10px;
      margin-left : 30px;
-     font-size: 25px;
+     font-size: 20px;
  }
+ 
+ 
 
  #footer {
     width: 100%;
-    padding: 20px 0 50px 0;
+    padding: 20px 0 30px 0;
     background: whitesmoke;
     text-align: center;
  }
@@ -129,7 +132,7 @@
  /* home css */
 
  #main {
-    padding : 0 100px 0 100px;
+    padding : 0 150px 0 150px;
  }
 
  #main .main-visual {
@@ -199,4 +202,229 @@
  #main .service .service-box .service-text {
      font-size: 18px;
  }
+ 
+ /* data css */
+ 
+ #main .data {
+ 	margin-top : 100px;
+ 	margin-bottom : 30px;
+ 	padding-top : 50px;
+ 	display : flex;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+ 
+ #main .data-title {
+ 	text-align : center;
+ 	color : black;
+ 	font-size : 20px;
+ 	margin-right : 15px;
+ }
+ 
+ #main .data-up {
+ 	display : flex;
+ 	flex-direction : column;
+ 	align-items : center;
+ 	justify-content : center;
+ 	margin-left : 15px;
+ }
+ 
+ #main .result {
+ 	text-align : center;
+ 	padding-top : 50px;
+ 	padding-bottom : 50px;
+ }
+ 
+ #main .result > div {
+ 	display : flex;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+ 
+ #main .result-01 .result-title {
+ 	color : black;
+ 	margin-right : 15px;
+ 	margin-bottom : 20px;
+ }
+ 
+  #main .result-01 .result-img  {
+ 	color : black;
+ 	margin-left : 15px;
+ 	margin-bottom : 20px;
+ }
+ 
+ #main .result-02 {
+ 	width : 100%;
+ }
+
+ #main > div.result > div.result-02 > div.temperature {
+ 	width : 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+  #main > div.result > div.result-02 > div.temperature iframe {
+  	width : 100%;
+  	height : 500px;
+  }
+ 
+ 
+ /* memory css */
+ 
+ 
+ #main .relation {
+ 	margin-top : 90px;
+ 	margin-bottom : 30px;
+ 	padding-top : 50px;
+ 	display : flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	flex-direction : column;
+ }
+ 
+  #main > div.result > div {
+  	width : 100%;
+  	height : 100%;
+  }
+ 
+  #main .relation .relation-title h2 {
+   	color : black;
+   	font-size : 30px;
+   	letter-spacing : 3px;
+   	padding-bottom : 15px;
+  }
+ 
+ #main .relation .relation-text {	
+ 	color : black;
+ }
+ 
+ 
+ /* 로그인, 회원가입*/
+ 
+ 
+ #main .join {
+	width: 300px;
+    height: auto;
+    margin: 160px auto 160px auto;
+    color: #363636;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 2% 2% 2% 2%;
+ }
+ 
+ #main .join .logo  {
+    font-family: 'Jal_Onuel';
+    text-align: center;
+    margin-bottom: 15px;
+}
+ 
+ 
+ #main .join .input-join input[type=text] , #main .join .input-join input[type=password] {
+    float: left;
+    width: 100%;
+    padding: 0;
+    padding-left: 24px;
+    height: 35px;
+    line-height: 40px;
+    background: #fff;
+    font-size: 16px;
+    border: 1px solid #363636;
+    margin: 0 0 10px 0;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+ #main .join {
+    width: 260px;
+    height: auto;
+    margin: 160px auto 160px auto;
+    color: #363636;
+    border : 1px solid gray;
+    border-radius: 20px;
+    padding : 2% 2% 2% 2%;
+}
+
+ #main .join .input-join {
+    overflow: hidden;
+}
+ 
+ #main .join .input-join label {
+    display: block;
+    clear: both;
+    font-size: 15px;
+    padding-left: 10px;
+    color : gray;
+}
+
+ #main .join > div:nth-child(2) {
+    color : gray;
+    text-align: center;
+    margin-bottom: 18px;
+    line-height: 1.5em;
+}
+
+#main .join .find-area {
+    width: 96%;
+    margin: 40px auto 0 auto;
+    display: flex;
+    align-items: center;
+}
+ 
+ #main > div > div.input-join > div > a > p {
+
+    font-size: 20px;
+    color: whitesmoke;
+    letter-spacing: 5px;
+    height: 30px;
+    width: 100%;
+    background-color: rgb(219, 92, 70);
+    margin: 15px auto;
+    margin-top : 55px;
+    border: none;
+    text-align: center;
+    padding-top: 12px;
+    border-radius: 30px;
+} 
+
+
+/* dictionary css */ 
+ 
+ #main .ditionary {
+ 	margin-top : 100px;
+ 	padding : 40px 0px ;
+ 	text-align : center;
+ 	color : black;
+ 	position : relative;
+ }
+ 
+ #main .ditionary .dictionary-text {
+ 	font-size : 20px;
+ 	margin-bottom : 20px;
+ }
+ 
+  #main .ditionary .dictionary-title {
+ 	font-size : 25px;
+ 	margin-bottom : 20px;
+ }
+ 
+ #main .ditionary .dictionary-list {
+ 	margin : 30px auto;
+ } 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 

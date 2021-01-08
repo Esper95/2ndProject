@@ -24,58 +24,58 @@ ul li {
 </style>
 </head>
 <body style="background-color: whitesmoke;">
-	<script type="text/javascript">
+	<script type="text/javascript"></script>
 
-</script>
+                			<div class="dot-box"
+							style="display: flex; text-align: center; justify-content: center;">
+							<div class="dot-items">
+								<svg id="fillgauge2" width="200px" height="200"
+									onclick="gauge2.update(NewValue());"></svg>
+								<div class="keyword-items red">
+									<ul>
+										<li>음식</li>
+										<li>퇴근</li>
+										<li>잠</li>
+									</ul>
+								</div>
+							</div>
+					
+							<div class="dot-items">
+								<svg id="fillgauge3" width="200px" height="200"
+									onclick="gauge3.update(NewValue());"></svg>
+								<div class="keyword-items yellow">
+									<ul>
+										<li>음식</li>
+										<li>퇴근</li>
+										<li>잠</li>
+									</ul>
+								</div>
+							</div>
+							<div class="dot-items">
+								<svg id="fillgauge4" width="200px" height="200"
+									onclick="gauge4.update(NewValue());"></svg>
+								<div class="keyword-items green">
+									<ul>
+										<li>음식</li>
+										<li>퇴근</li>
+										<li>잠</li>
+									</ul>
+								</div>
+							</div>
+							<div class="dot-items">
+								<svg id="fillgauge5" width="200px" height="200"
+									onclick="gauge5.update(NewValue());"></svg>
+								<div class="keyword-items blue">
+									<ul>
+										<li>음식</li>
+										<li>퇴근</li>
+										<li>잠</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 
-	<div class="dot-box"
-		style="display: flex; text-align: center; justify-content: center;">
-		<div class="dot-items">
-			<svg id="fillgauge2" width="200px" height="200"
-				onclick="gauge2.update(NewValue());"></svg>
-			<div class="keyword-items red">
-				<ul>
-					<li>음식</li>
-					<li>퇴근</li>
-					<li>잠</li>
-				</ul>
-			</div>
-		</div>
 
-		<div class="dot-items">
-			<svg id="fillgauge3" width="200px" height="200"
-				onclick="gauge3.update(NewValue());"></svg>
-			<div class="keyword-items yellow">
-				<ul>
-					<li>음식</li>
-					<li>퇴근</li>
-					<li>잠</li>
-				</ul>
-			</div>
-		</div>
-		<div class="dot-items">
-			<svg id="fillgauge4" width="200px" height="200"
-				onclick="gauge4.update(NewValue());"></svg>
-			<div class="keyword-items green">
-				<ul>
-					<li>음식</li>
-					<li>퇴근</li>
-					<li>잠</li>
-				</ul>
-			</div>
-		</div>
-		<div class="dot-items">
-			<svg id="fillgauge5" width="200px" height="200"
-				onclick="gauge5.update(NewValue());"></svg>
-			<div class="keyword-items blue">
-				<ul>
-					<li>음식</li>
-					<li>퇴근</li>
-					<li>잠</li>
-				</ul>
-			</div>
-		</div>
-	</div>
 	<%
 	String worry =request.getParameter("worry");
 	System.out.println(worry);
