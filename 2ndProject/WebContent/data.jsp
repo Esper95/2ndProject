@@ -120,7 +120,11 @@ memberDTO user = (memberDTO)session_user.getAttribute("user");
                 		<iframe src="graph\dot.jsp"></iframe>
             		</div>
    	    		</div>
-   	    		<div class="save-file-btn">
+   	    		<form action="DataSave">
+   	    		<input type="text" name = "partner">
+   	    		<input type="submit" style="display: none;" id="save" placeholder="상대방 이름을 입력해주세요">
+   	    		</form>
+   	    		<div class="save-file-btn" onclick="onclick=document.all.save.click()">
 	                <a href="#">온도 저장하기</a>
 	            </div>
    	    	
