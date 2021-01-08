@@ -12,15 +12,35 @@
     <link rel="stylesheet" href="css-sample/reset.css">
     <link rel="stylesheet" href="css-sample/home.css">
     <script src="js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript">
+		$(window).load(function(){
+			$('.loader').fadeOut();
+		})
+		
+	</script>
+	<script language="javascript">
+		document.all.loadingBar.style.display='none';
+	</script>
+	
 </head>
-<body>
+<body >
 <%HttpSession session_user = request.getSession();
   memberDTO user = (memberDTO)session_user.getAttribute("user");
-  
+  	//카카오톡 빈 간격 시간
+  	String hour =request.getParameter("hour");
+  	String minutes =request.getParameter("minutes");
+  	String second =request.getParameter("second");
+  	// 카카오톡 문장 개수
+  	String countMe =request.getParameter("countMe");
+  	String countYou=request.getParameter("countYou");
+  	// ㅋㅋㅋ 개수
+  	String kikiCount = request.getParameter("kikiCount");
+  	// 감정 분류 개수
     String worry =request.getParameter("worry");
 	String angry =request.getParameter("angry");
 	String sad =request.getParameter("sad");
 	String happy =request.getParameter("happy");
+	// 감정 주요 키워드
 	String worry1 =request.getParameter("worry1");
 	String worry2 =request.getParameter("worry2");
 	String worry3 =request.getParameter("worry3");
@@ -33,6 +53,11 @@
 	String happy1 =request.getParameter("happy1");
 	String happy2 =request.getParameter("happy2");
 	String happy3 =request.getParameter("happy3");
+	// 낮 저녁 카톡 개수
+	String morningMe = request.getParameter("morningMe");
+	String morningYou =request.getParameter("morningYou");
+	String nightMe = request.getParameter("nightMe");
+	String nightYou = request.getParameter("nightYou");
  %>
     <div id="contain">
         <div id="header">
@@ -71,18 +96,22 @@
             </div>
             <div class="temperature">
                 <iframe src="graph/dot.jsp?worry=<%=worry%>&angry=<%=angry %>&sad=<%=sad%>&happy=<%=happy%>&worry1=<%=worry1%>&worry2=<%=worry2%>&worry3=<%=worry3%>&angry1=<%=angry1%>&angry2=<%=angry2%>&angry3=<%=angry3%>&sad1=<%=sad1%>&sad2=<%=sad2%>&sad3=<%=sad3%>&happy1=<%=happy1%>&happy2=<%=happy2%>&happy3=<%=happy3%>"></iframe>
-            </div>
-            <div class="save-file-btn">
+   			</div>
+        </div>
+        	<form action="DataSave">
+            	<input type="text" name="partner" placeholder="상대방의 이름을 적어주세요">
+            	<input type="submit" style="display: none;" id="save"> 
+           	</form>
+            <div class="save-file-btn"  onclick="onclick=document.all.save.click()">
                 <a href="#"><p>온도 저장하기</p></a>
             </div>
         </div>
     </div>
         <div id="footer">
-            <div class="contact-sns">s
+            <div class="contact-sns">
                 <span>트위터 / 페이스북 / 인스타그램</span>
             </div>
         </div>
-    </div>
     
 </body>
 </html>

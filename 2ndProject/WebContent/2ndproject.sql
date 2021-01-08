@@ -23,6 +23,8 @@ email varchar2(50)
 );
 
 CREATE TABLE kakaodata(
+id varchar2(30),
+partner varchar2(30),
 term_hour varchar2(10),
 term_minute varchar2(10),
 term_seconds varchar2(10),
@@ -36,6 +38,8 @@ kikicount varchar2(10)
 );
 
 CREATE TABLE emotion(
+id varchar2(30),
+partner varchar2(30),
 worry varchar2(10),
 angry varchar2(10),
 sad varchar2(10),
@@ -43,6 +47,8 @@ happy varchar2(10)
 );
 
 CREATE TABLE keyword(
+id varchar2(30),
+partner varchar2(30),
 worry1 varchar2(50),
 worry2 varchar2(50),
 worry3 varchar2(50),
@@ -60,7 +66,6 @@ happy3 varchar2(50)
 CREATE TABLE kakaoresult(
 id varchar2(30),
 partner varchar2(30),
-relation varchar2(50),
 temper number,
 savedate date
 );
@@ -71,5 +76,4 @@ id varchar2(30),
 partner varchar2(30),
 temper number,
 intimacy number,
-relation varchar2(30)
 );
