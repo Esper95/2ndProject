@@ -2,14 +2,15 @@ package conn.model;
 
 public class dataDTO {
 	
-
+	private String id;
+	private String partner;
+	private String temper;
+	private String savedate;
 	private String worry;
 	private String angry;
 	private String sad;
 	private String happy;
-	private String term_hour;
-	private String term_minute;
-	private String term_seconds;
+	private String term;
 	private String conv_count1;
 	private String conv_count2;
 	private String morn_count1;
@@ -31,8 +32,10 @@ public class dataDTO {
 	private String happy3;
 	
 	
-	public dataDTO(String worry, String angry, String sad, String happy) {
+	public dataDTO(String id, String partner, String worry, String angry, String sad, String happy) {
 		super();
+		this.id = id;
+		this.partner = partner;
 		this.worry = worry;
 		this.angry = angry;
 		this.sad = sad;
@@ -41,12 +44,12 @@ public class dataDTO {
 	
 
 
-	public dataDTO(String term_hour, String term_minute,String term_seconds, String conv_count1, String conv_count2,
+	public dataDTO(String id, String partner, String term, String conv_count1, String conv_count2,
 			String morn_count1, String morn_count2, String night_count1, String night_count2, String kikicount) {
 		super();
-		this.term_hour = term_hour;
-		this.term_minute = term_minute;
-		this.term_seconds = term_seconds;
+		this.id = id;
+		this.partner = partner;
+		this.term = term;
 		this.conv_count1 = conv_count1;
 		this.conv_count2 = conv_count2;
 		this.morn_count1 = morn_count1;
@@ -61,9 +64,11 @@ public class dataDTO {
 
 
 
-	public dataDTO(String worry1, String worry2, String worry3, String angry1, String angry2, String angry3,
+	public dataDTO(String id, String partner, String worry1, String worry2, String worry3, String angry1, String angry2, String angry3,
 			String sad1, String sad2, String sad3, String happy1, String happy2, String happy3) {
 		super();
+		this.id = id;
+		this.partner = partner;
 		this.worry1 = worry1;
 		this.worry2 = worry2;
 		this.worry3 = worry3;
@@ -76,6 +81,78 @@ public class dataDTO {
 		this.happy1 = happy1;
 		this.happy2 = happy2;
 		this.happy3 = happy3;
+	}
+
+	
+	
+
+	
+	public dataDTO(String id, String partner, String temper, String savedate) {
+		super();
+		this.id = id;
+		this.partner = partner;
+		this.temper = temper;
+		this.savedate = savedate;
+	}
+
+
+
+	public String getTemper() {
+		return temper;
+	}
+
+
+
+	public void setTemper(String temper) {
+		this.temper = temper;
+	}
+
+
+
+	public String getSavedate() {
+		return savedate;
+	}
+
+
+
+	public void setSavedate(String savedate) {
+		this.savedate = savedate;
+	}
+
+
+
+	public String getId() {
+		return id;
+	}
+
+
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+
+
+	public String getPartner() {
+		return partner;
+	}
+
+
+
+	public void setPartner(String partner) {
+		this.partner = partner;
+	}
+
+
+
+	public String getTerm() {
+		return term;
+	}
+
+
+
+	public void setTerm(String term) {
+		this.term = term;
 	}
 
 
@@ -125,43 +202,6 @@ public class dataDTO {
 	public void setHappy(String happy) {
 		this.happy = happy;
 	}
-
-
-
-	public String getTerm_hour() {
-		return term_hour;
-	}
-
-
-
-	public void setTerm_hour(String term_hour) {
-		this.term_hour = term_hour;
-	}
-
-
-
-	public String getTerm_minute() {
-		return term_minute;
-	}
-
-
-
-	public void setTerm_minute(String term_minute) {
-		this.term_minute = term_minute;
-	}
-
-
-
-	public String getTerm_seconds() {
-		return term_seconds;
-	}
-
-
-
-	public void setTerm_seconds(String term_seconds) {
-		this.term_seconds = term_seconds;
-	}
-
 
 
 	public String getConv_count1() {

@@ -20,12 +20,7 @@
         <div id="header">
         	<div class="top">
     			<ul>
-	    			<%if(user!=null) {%>
 	    			<li><a href="LogoutService"><span data-hover="로그아웃">로그아웃</span></a></li>  	
-	    			<%} else{%>
-	    			<li><a href="login.jsp"><span data-hover="로그인/회원가입">로그인</span></a></li>
-	                <li><a href="join.jsp"><span data-hover="로그인/회원가입">회원가입</span></a></li>
-	    			<%} %>	 	                    		
     			</ul>
     		</div>
     		<div class="menu">
@@ -35,12 +30,9 @@
 	            </div>   
 				<nav class="navbar">
 					<ul>
-<%-- 	                  	<%if(user!=null){ %> --%>
 	                    <li><a href="data.jsp"><span>온도계</span></a></li>
 	                    <li><a href="memory.jsp"><span>연결고리</span></a></li>
 	                    <li><a href="dictionary.jsp"><span>감정사전</span></a></li>
-<%-- 	                    <%}else{ %>
-	                    <%} %> --%>
 	                </ul>
 	       	    </nav>
 	       	    </div>
@@ -55,15 +47,13 @@
 	   	    		<div class="relation-title">
 	   	 				감정관계도
 	   	    		</div>
-	   	    		<!-- <div class="relation-text">
-						우리의 관계는 블라블라 블라 
-	               </div> -->
+	   	    		
 	           </div>
 	           <div class="relation02">
 	           		<input type="submit"  name="relation-btn" id="relation-btn">
 	           </div>
    	    	</div>
-   	    	a
+   	    	
    	    	
 			<!-- 관계도 -->
    	    	<div class="result02">

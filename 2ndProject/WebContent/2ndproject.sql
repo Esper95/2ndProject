@@ -1,9 +1,8 @@
 select * from kakaoMEMBER;
-select name, phone, email from kakaomember where id='//' and pw='//';
-
-select name, phone, email from kakaomember where id='[[' and pw='[[';
-delete from kakaomember where id is NULL;
- 
+select * from kakaodata;
+select * from emotion;
+select * from keyword;
+select * from kakaoresult;
 
 
 drop table kakaomember cascade constraints;
@@ -25,9 +24,7 @@ email varchar2(50)
 CREATE TABLE kakaodata(
 id varchar2(30),
 partner varchar2(30),
-term_hour varchar2(10),
-term_minute varchar2(10),
-term_seconds varchar2(10),
+term varchar2(10),
 conv_count1 varchar2(10),
 conv_count2 varchar2(10),
 morn_count1 varchar2(10),
@@ -75,5 +72,5 @@ CREATE TABLE saveinfo(
 id varchar2(30),
 partner varchar2(30),
 temper number,
-intimacy number,
+intimacy number
 );

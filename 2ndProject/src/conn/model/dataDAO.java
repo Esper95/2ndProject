@@ -59,9 +59,9 @@ public class dataDAO {
 				String sql = "insert into kakaodata values(?,?,?,?,?,?,?,?,?,?)";
 				psmt = conn.prepareStatement(sql);
 				
-				psmt.setString(1, dto.getTerm_hour());
-				psmt.setString(2, dto.getTerm_minute());
-				psmt.setString(3, dto.getTerm_seconds());
+				psmt.setString(1, dto.getId());
+				psmt.setString(2, dto.getPartner());
+				psmt.setString(3, dto.getTerm());
 				psmt.setString(4, dto.getConv_count1());
 				psmt.setString(5, dto.getConv_count2());
 				psmt.setString(6, dto.getMorn_count1());
@@ -86,13 +86,15 @@ public class dataDAO {
 			conn();
 		
 			try {
-				String sql = "insert into emotion values(?,?,?,?)";
+				String sql = "insert into emotion values(?,?,?,?,?,?)";
 				psmt = conn.prepareStatement(sql);
 				
-				psmt.setString(1, dto.getWorry());
-				psmt.setString(2, dto.getAngry());
-				psmt.setString(3, dto.getSad());
-				psmt.setString(4, dto.getHappy());
+				psmt.setString(1, dto.getId());
+				psmt.setString(2, dto.getPartner());
+				psmt.setString(3, dto.getWorry());
+				psmt.setString(4, dto.getAngry());
+				psmt.setString(5, dto.getSad());
+				psmt.setString(6, dto.getHappy());
 				
 				
 				cnt = psmt.executeUpdate();
@@ -111,21 +113,23 @@ public class dataDAO {
 			conn();
 		
 			try {
-				String sql = "insert into keyword values(?,?,?,?,?,?,?,?,?,?,?,?)";
+				String sql = "insert into keyword values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 				psmt = conn.prepareStatement(sql);
 				
-				psmt.setString(1, dto.getWorry1());
-				psmt.setString(2, dto.getWorry2());
-				psmt.setString(3, dto.getWorry3());
-				psmt.setString(4, dto.getAngry1());
-				psmt.setString(5, dto.getAngry2());
-				psmt.setString(6, dto.getAngry3());
-				psmt.setString(7, dto.getSad1());
-				psmt.setString(8, dto.getSad2());
-				psmt.setString(9, dto.getSad3());
-				psmt.setString(10, dto.getHappy1());
-				psmt.setString(11, dto.getHappy2());
-				psmt.setString(12, dto.getHappy3());
+				psmt.setString(1, dto.getId());
+				psmt.setString(2, dto.getPartner());
+				psmt.setString(3, dto.getWorry1());
+				psmt.setString(4, dto.getWorry2());
+				psmt.setString(5, dto.getWorry3());
+				psmt.setString(6, dto.getAngry1());
+				psmt.setString(7, dto.getAngry2());
+				psmt.setString(8, dto.getAngry3());
+				psmt.setString(9, dto.getSad1());
+				psmt.setString(10, dto.getSad2());
+				psmt.setString(11, dto.getSad3());
+				psmt.setString(12, dto.getHappy1());
+				psmt.setString(13, dto.getHappy2());
+				psmt.setString(14, dto.getHappy3());
 				
 				
 				cnt = psmt.executeUpdate();
@@ -138,5 +142,31 @@ public class dataDAO {
 			}
 			
 			return cnt;
+		}
+		
+		public int kakaoresult(dataDTO dto) {
+			conn();
+
+			try {
+				String sql = "insert into keyword values(?,?,?,sysdate)";
+				psmt = conn.prepareStatement(sql);
+				
+				psmt.setString(1, dto.getId());
+				psmt.setString(2, dto.getPartner());
+				psmt.setString(3, dto.getTemper());
+				
+				cnt = psmt.executeUpdate();
+				
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}finally {
+				close();
+			}
+			
+			return cnt;	
+			
+			
+			
 		}
 }

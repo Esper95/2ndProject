@@ -22,12 +22,8 @@
         <div id="header">
         	<div class="top">
     			<ul>
-	    			<%if(user!=null) {%>
-	    			<li><a href="LogoutService"><span data-hover="로그아웃">로그아웃</span></a></li>  	
-	    			<%} else{%>
 	    			<li><a href="login.jsp"><span data-hover="로그인/회원가입">로그인</span></a></li>
 	                <li><a href="join.jsp"><span data-hover="로그인/회원가입">회원가입</span></a></li>
-	    			<%} %>	                    		
     			</ul>
     		</div>
     		<div class="menu">
@@ -37,12 +33,20 @@
 	            </div>   
 				<nav class="navbar">
 					<ul>
+<<<<<<< HEAD
 <%-- 	                  	<%if(user!=null){ %> --%>
+=======
+>>>>>>> branch 'master' of https://github.com/Esper95/2ndProject.git
 	                    <li><a href="data.jsp"><span>온도계</span></a></li>
+<<<<<<< HEAD
 	                    <li><a href="memory.jsp"><span>연결고리</span></a></li>
 	                    <li><a href="dictionary.jsp"><span>감정사전</span></a></li>
 <%-- 	                    <%}else{ %>
 	                    <%} %> --%>
+=======
+	                    <li><a href="memory.jsp"><span>기억창고</span></a></li>
+	                    <li><a href="contact.jsp"><span>연결고리</span></a></li>
+>>>>>>> branch 'master' of https://github.com/Esper95/2ndProject.git
 	                </ul>
 	       	    </nav>
 	       	    </div>

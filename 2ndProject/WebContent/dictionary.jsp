@@ -20,12 +20,7 @@
         <div id="header">
         	<div class="top">
     			<ul>
-	    			<%if(user!=null) {%>
 	    			<li><a href="LogoutService"><span>로그아웃</span></a></li>  	
-	    			<%} else{%>
-	    			<li><a href="login.jsp"><span>로그인</span></a></li>
-	                <li><a href="join.jsp"><span>회원가입</span></a></li>
-	    			<%} %>	 	                    		
     			</ul>
     		</div>
     		<div class="menu">
