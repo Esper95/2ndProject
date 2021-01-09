@@ -31,19 +31,21 @@
     			</ul>
     		</div>
     		<div class="menu">
+    			<div class="menu-box">
 	            <div class="logo">
-	               	<a href="home.jsp">감정의 온도</a>
+	               	<a href="home.jsp"><img src="">감정의 온도</a>
 	            </div>   
 				<nav class="navbar">
 					<ul>
-	                  	<%if(user!=null){ %>
+<%-- 	                  	<%if(user!=null){ %> --%>
 	                    <li><a href="data.jsp"><span>온도계</span></a></li>
-	                    <li><a href="memory.jsp"><span>기억창고</span></a></li>
-	                    <li><a href="contact.jsp"><span>연결고리</span></a></li>
-	                    <%}else{ %>
-	                    <%} %>
+	                    <li><a href="memory.jsp"><span>연결고리</span></a></li>
+	                    <li><a href="dictionary.jsp"><span>감정사전</span></a></li>
+<%-- 	                    <%}else{ %>
+	                    <%} %> --%>
 	                </ul>
 	       	    </nav>
+	       	    </div>
 	       </div>
         </div>
         
@@ -54,7 +56,7 @@
 	            <div class="logo">
 	                감정의 온도
 	            </div>
-	            <div clas="logo-text">
+	            <div class="logo-text">
 	                <!-- 감정의 온도를 이용하시려면<br>
 	                회원가입이 필요합니다. -->
 	            </div>
@@ -86,8 +88,8 @@
             <div class="footer-box">
                 <span>Made by</span>
                 <span>LAB 병아리</span>  
+        	</div>
         </div>
-        
         <!-- 전체 contain 끝 -->
     </div>
   

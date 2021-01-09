@@ -29,19 +29,21 @@
     			</ul>
     		</div>
     		<div class="menu">
+    			<div class="menu-box">
 	            <div class="logo">
 	               	<a href="home.jsp"><img src="">감정의 온도</a>
 	            </div>   
 				<nav class="navbar">
 					<ul>
-	                  	<%if(user!=null){ %>
+<%-- 	                  	<%if(user!=null){ %> --%>
 	                    <li><a href="data.jsp"><span>온도계</span></a></li>
-	                    <li><a href="memory.jsp"><span>기억창고</span></a></li>
-	                    <li><a href="contact.jsp"><span>연결고리</span></a></li>
-	                    <%}else{ %>
-	                    <%} %>
+	                    <li><a href="memory.jsp"><span>연결고리</span></a></li>
+	                    <li><a href="dictionary.jsp"><span>감정사전</span></a></li>
+<%-- 	                    <%}else{ %>
+	                    <%} %> --%>
 	                </ul>
 	       	    </nav>
+	       	    </div>
 	       </div>
         </div>
         
@@ -51,52 +53,52 @@
         	<!-- 섹션 02-1 메인 이미지 -->
             <div class="main-visual">
                 <div class="img">
-                    <img src="img\main-banner02.jpg">
-                    <div class="img-text">
-                        <p class="video-title">문자 사이에 숨겨둔 감정의 온도를 잴 수 있다면</p>
-                    </div>
+                    <img src="img\main-banner06.jpg">
+                     <div class="img-text">
+                	문자 사이에 숨겨둔 감정의 온도를 잴 수 있다면
+                </div>
                 </div>
             </div>
             
             <!-- 섹션 02-2 서비스 설명 -->
 			<div class="service">
 				<div class="service-title">
-					<h2>Service</h2>
+					Project
 				</div>
 				<div class="service-box">
-					<div class=servic-items>
+					<div class=service-items>
 						<div class="service-icon">
-							<img sre="">
+							<img src="img/service01.png">
 						</div>
 						<div class="service-items-box">
 							<div class="service-name">
-								<a href="data-sample.html"><p>기억창고</p></a>
+								<p>온도계</p>
 							</div>
 							<div class="service-text">
 								<p>설명</p>
 							</div>
 						</div>
 					</div>
-					<div class=servic-items>
+					<div class=service-items>
 						<div class="service-icon">
-							<img sre="">
+							<img src="img/service02.png">
 						</div>
 						<div class="service-items-box">
 							<div class="service-name">
-								<a href="data-sample.html"><p>기억창고</p></a>
+								<p>연결고리</p>
 							</div>
 							<div class="service-text">
 								<p>설명</p>
 							</div>
 						</div>
 					</div>
-					<div class=servic-items>
+					<div class=service-items>
 						<div class="service-icon">
-							<img sre="">
+							<img src="img/service03.png">
 						</div>
 						<div class="service-items-box">
 							<div class="service-name">
-								<a href="data-sample.html"><p>기억창고</p></a>
+								<p>감정사전</p>
 							</div>
 							<div class="service-text">
 								<p>설명</p>

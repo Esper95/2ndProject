@@ -64,19 +64,21 @@ memberDTO user = (memberDTO)session_user.getAttribute("user");
     			</ul>
     		</div>
     		<div class="menu">
+    			<div class="menu-box">
 	            <div class="logo">
-	               	<a href="home.jsp">감정의 온도</a>
+	               	<a href="home.jsp"><img src="">감정의 온도</a>
 	            </div>   
 				<nav class="navbar">
 					<ul>
-	                  	<%if(user!=null){ %>
+<%-- 	                  	<%if(user!=null){ %> --%>
 	                    <li><a href="data.jsp"><span>온도계</span></a></li>
-	                    <li><a href="memory.jsp"><span>기억창고</span></a></li>
-	                    <li><a href="contact.jsp"><span>연결고리</span></a></li>
-	                    <%}else{ %>
-	                    <%} %>
+	                    <li><a href="memory.jsp"><span>연결고리</span></a></li>
+	                    <li><a href="dictionary.jsp"><span>감정사전</span></a></li>
+<%-- 	                    <%}else{ %>
+	                    <%} %> --%>
 	                </ul>
 	       	    </nav>
+	       	    </div>
 	       </div>
         </div>
         
@@ -112,7 +114,7 @@ memberDTO user = (memberDTO)session_user.getAttribute("user");
    	    		<div class="result-01">
    	    			<div class="result-title">우리의 감정온도</div>
    	    			<div class="result-img">
-   	    				<iframe src="graph\temperature.html"></iframe>
+   	    				<iframe src="graph\temperature.jsp"></iframe>
    	    			</div>
    	    		</div>
    	    	
@@ -123,27 +125,26 @@ memberDTO user = (memberDTO)session_user.getAttribute("user");
             		</div>
    	    		</div>
    	    		<div class="data-save">
+   	    		<div class="data-save-title">상대방 이름을 입력하세요</div>
    	    			<form action="DataSave">
-   	    				<p>상대방 이름을 입력하세요</p>
    	    				<input type="text" name = "partner">
-   	    				<input type="submit" style="display: none;" id="save" >
-   	    				<p>온도 저장하기</p>
+   	    				<input type="submit" name = "DataSave" id="save" value="온도 저장하기">
    	    			</form>
    	    		</div>
    	    		
    	    	
    	    	</div>
-
-        <!-- 섹션 03 footer -->
+        
+        
+    </div>
+            <!-- 섹션 03 footer -->
 
         <div id="footer">
             <div class="footer-box">
                 <span>Made by</span>
                 <span>LAB 병아리</span>  
         </div>
-        
-        <!-- 전체 contain 끝 -->
-    </div>
+    <!-- 전체 contain 끝 -->
     </div>
     
 </body>
