@@ -27,13 +27,18 @@
     			</ul>
     		</div>
     		<div class="menu">
+    			<div class="menu-box">
 	            <div class="logo">
-	               	<a href="home.jsp">감정의 온도</a>
+	               	<a href="home.jsp"><img src="">감정의 온도</a>
 	            </div>   
 				<nav class="navbar">
 					<ul>
+	                    <li><a href="data.jsp"><span>온도계</span></a></li>
+	                    <li><a href="memory.jsp"><span>연결고리</span></a></li>
+	                    <li><a href="dictionary.jsp"><span>감정사전</span></a></li>
 	                </ul>
 	       	    </nav>
+	       	    </div>
 	       </div>
         </div>
         

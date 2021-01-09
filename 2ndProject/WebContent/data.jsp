@@ -69,16 +69,20 @@
     			</ul>
     		</div>
     		<div class="menu">
+    			<div class="menu-box">
 	            <div class="logo">
-	               	<a href="home.jsp">감정의 온도</a>
+	               	<a href="home.jsp"><img src="">감정의 온도</a>
 	            </div>   
 				<nav class="navbar">
 					<ul>
+
+
 	                    <li><a href="data.jsp"><span>온도계</span></a></li>
                   		<li><a href="http://118.40.82.69:9000/timefile" method="post" enctype="multipart/form-data"><span>기억창고</span></a></li>
-	                    <li><a href="contact.jsp"><span>연결고리</span></a></li>
+	                    <li><a href="contact.jsp"><span>감정사전</span></a></li>
 	                </ul>
 	       	    </nav>
+	       	    </div>
 	       </div>
         </div>
         
@@ -114,7 +118,7 @@
    	    		<div class="result-01">
    	    			<div class="result-title">우리의 감정온도</div>
    	    			<div class="result-img">
-   	    				<iframe src="graph\temperature.html"></iframe>
+   	    				<iframe src="graph\temperature.jsp"></iframe>
    	    			</div>
    	    		</div>
    	    	
@@ -137,18 +141,14 @@
 						</div>   	    				
    	    			</form>
    	    		</div>
-   	    		
-   	    	
    	    	</div>
 		</div>
         <!-- 섹션 03 footer -->
-
         <div id="footer">
             <div class="footer-box">
                 <span>Made by</span>
                 <span>LAB 병아리</span>  
         </div>
-        
     </div>
         <!-- 전체 contain 끝 -->
 </div>

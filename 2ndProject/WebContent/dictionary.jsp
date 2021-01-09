@@ -24,16 +24,18 @@
     			</ul>
     		</div>
     		<div class="menu">
+    			<div class="menu-box">
 	            <div class="logo">
-	               	<a href="home.jsp">감정의 온도</a>
+	               	<a href="home.jsp"><img src="">감정의 온도</a>
 	            </div>   
 				<nav class="navbar">
 					<ul>
 	                    <li><a href="data.jsp"><span>온도계</span></a></li>
-	                    <li><a href="http://118.40.82.69:9000/timefile" method="post" enctype="multipart/form-data"><span>기억창고</span></a></li>
-	                    <li><a href="contact.jsp"><span>연결고리</span></a></li>
-	                </ul> 
+	                    <li><a href="http://118.40.82.69:9000/timefile" method="post" enctype="multipart/form-data"><span>연결고리</span></a></li>
+	                    <li><a href="dictionary.jsp"><span>감정사전</span></a></li>
+	                </ul>
 	       	    </nav>
+	       	    </div>
 	       </div>
         </div>
         
