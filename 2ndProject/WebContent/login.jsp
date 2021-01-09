@@ -47,7 +47,7 @@
 	            <div class="logo">
 	                감정의 온도
 	            </div>
-	            <div clas="logo-text">
+	            <div class="logo-text">
 	                <!-- 감정의 온도를 이용하시려면<br>
 	                회원가입이 필요합니다. -->
 	            </div>
@@ -79,8 +79,8 @@
             <div class="footer-box">
                 <span>Made by</span>
                 <span>LAB 병아리</span>  
+        	</div>
         </div>
-        
         <!-- 전체 contain 끝 -->
     </div>
   
