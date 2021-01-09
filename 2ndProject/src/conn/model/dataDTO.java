@@ -10,13 +10,8 @@ public class dataDTO {
 	private String angry;
 	private String sad;
 	private String happy;
-	private String term;
-	private String conv_count1;
-	private String conv_count2;
-	private String morn_count1;
-	private String morn_count2;
-	private String night_count1;
-	private String night_count2;
+	private String morning;
+	private String night;
 	private String kikicount;
 	private String worry1;
 	private String worry2;
@@ -30,6 +25,12 @@ public class dataDTO {
 	private String happy1;
 	private String happy2;
 	private String happy3;
+	private String relation1;
+	private String relation2;
+	private String relation3;
+	private String relation4;
+	private String relation5;
+	private String relation6;
 	
 	
 	public dataDTO(String id, String partner, String worry, String angry, String sad, String happy) {
@@ -42,24 +43,25 @@ public class dataDTO {
 		this.happy = happy;
 	}
 	
+	
 
 
-	public dataDTO(String id, String partner, String term, String conv_count1, String conv_count2,
-			String morn_count1, String morn_count2, String night_count1, String night_count2, String kikicount) {
+
+	public dataDTO(String id, String partner,String morning,String night, String kikicount) {
 		super();
 		this.id = id;
 		this.partner = partner;
-		this.term = term;
-		this.conv_count1 = conv_count1;
-		this.conv_count2 = conv_count2;
-		this.morn_count1 = morn_count1;
-		this.morn_count2 = morn_count2;
-		this.night_count1 = night_count1;
-		this.night_count2 = night_count2;
+		this.morning = morning;
+		this.night = night;
 		this.kikicount = kikicount;
 	}
-
-
+	public dataDTO(String morning,String night, String kikicount) {
+		super();
+		
+		this.morning = morning;
+		this.night = night;
+		this.kikicount = kikicount;
+	}
 
 
 
@@ -145,17 +147,6 @@ public class dataDTO {
 
 
 
-	public String getTerm() {
-		return term;
-	}
-
-
-
-	public void setTerm(String term) {
-		this.term = term;
-	}
-
-
 
 	public String getWorry() {
 		return worry;
@@ -204,74 +195,26 @@ public class dataDTO {
 	}
 
 
-	public String getConv_count1() {
-		return conv_count1;
+	public String getMorning() {
+		return morning;
 	}
 
 
 
-	public void setConv_count1(String conv_count1) {
-		this.conv_count1 = conv_count1;
+	public void setMorning(String morning) {
+		this.morning = morning;
 	}
 
 
 
-	public String getConv_count2() {
-		return conv_count2;
+	public String getNight() {
+		return night;
 	}
 
 
 
-	public void setConv_count2(String conv_count2) {
-		this.conv_count2 = conv_count2;
-	}
-
-
-
-	public String getMorn_count1() {
-		return morn_count1;
-	}
-
-
-
-	public void setMorn_count1(String morn_count1) {
-		this.morn_count1 = morn_count1;
-	}
-
-
-
-	public String getMorn_count2() {
-		return morn_count2;
-	}
-
-
-
-	public void setMorn_count2(String morn_count2) {
-		this.morn_count2 = morn_count2;
-	}
-
-
-
-	public String getNight_count1() {
-		return night_count1;
-	}
-
-
-
-	public void setNight_count1(String night_count1) {
-		this.night_count1 = night_count1;
-	}
-
-
-
-	public String getNight_count2() {
-		return night_count2;
-	}
-
-
-
-	public void setNight_count2(String night_count2) {
-		this.night_count2 = night_count2;
+	public void setNight(String night) {
+		this.night = night;
 	}
 
 

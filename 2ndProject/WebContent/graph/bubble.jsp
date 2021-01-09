@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,17 +35,33 @@
 <div class="bubbleChart">
 </div>
 </body>
+<%
 
+String one =request.getParameter("one");
+String two =request.getParameter("two");
+String three =request.getParameter("three");
+String four =request.getParameter("four");
+String five =request.getParameter("five");
+   String user1 = "±è¼öÁö";
+   String user2 = "±è¹Ì¸²";
+   String user3 = "¹Ú¼ºÁø";
+   String user4 = "Á¤°í¿î";
+   String user5 = "ÃÖÁ¤»ó";
+   
+   String total1 = one;
+   String total2 = two;
+   String total3 = three;
+   String total4 = four;
+   String total5 = five;
+%>
 <script>
-var list = [
-    {text: "ë‚˜", count: "80"},
-    {text: ".Net", count: "50"},
-    {text: "Php", count: "40"},
-    {text: "Ruby", count: "30"},
-    {text: "D", count: "12"},
-    
-  ]
+var itemList = [];
+var textList = ["<%=user1%>","<%=user2%>","<%=user3%>","<%=user4%>","<%=user5%>"];
+var countList = ["<%=total1%>","<%=total2%>","<%=total3%>","<%=total4%>","<%=total5%>"];
 
+for(var i = 0; i<textList.length; i++){
+   itemList.push({text : textList[i], count : countList[i]});
+}
 
 
 $(document).ready(function () {
@@ -60,7 +78,7 @@ $(document).ready(function () {
       //intersectInc: use @default
       //circleColor: use @default
       data: {
-        items: list ,
+        items: itemList ,
         eval: function (item) {return item.count;},
         classed: function (item) {return item.text.split(" ").join("");}
       },
@@ -68,7 +86,7 @@ $(document).ready(function () {
         {
           name: "central-click",
           options: {
-            text: "(See more detail)",
+            text: "",
             style: {
               "font-size": "12px",
               "font-style": "italic",
@@ -118,7 +136,7 @@ $(document).ready(function () {
             ],
             centralFormat: [
               {// Line #0
-                style: {"font-size": "0px"},
+                style: {"font-size": "50px"},
                 attr: {}
               },
               {// Line #1
@@ -130,7 +148,7 @@ $(document).ready(function () {
         }]
     });
   });
-  LICENSE
+
 
 </script>
 </html>

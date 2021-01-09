@@ -3,7 +3,7 @@ select * from kakaodata;
 select * from emotion;
 select * from keyword;
 select * from kakaoresult;
-
+select partner from kakaodata;
 
 drop table kakaomember cascade constraints;
 drop table kakaodata cascade constraints;
@@ -11,6 +11,9 @@ drop table emotion cascade constraints;
 drop table keyword cascade constraints;
 drop table kakaoresult cascade constraints;
 drop table saveinfo cascade constraints;
+
+
+delete from KAKAODATA where partner is null;
 
 
 CREATE TABLE kakaomember(
@@ -24,13 +27,8 @@ email varchar2(50)
 CREATE TABLE kakaodata(
 id varchar2(30),
 partner varchar2(30),
-term varchar2(10),
-conv_count1 varchar2(10),
-conv_count2 varchar2(10),
-morn_count1 varchar2(10),
-morn_count2 varchar2(10),
-night_count1 varchar2(10),
-night_count2 varchar2(10),
+morning varchar2(10),
+night varchar2(10),
 kikicount varchar2(10)
 );
 
