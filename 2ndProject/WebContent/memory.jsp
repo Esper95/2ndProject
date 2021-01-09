@@ -47,13 +47,15 @@
 	   	    		<div class="relation-title">
 	   	 				감정관계도
 	   	    		</div>
-	   	    		
+	   	    		<!-- <div class="relation-text">
+						우리의 관계는 블라블라 블라 
+	               </div> -->
 	           </div>
 	           <div class="relation02">
 	           		<input type="submit"  name="relation-btn" id="relation-btn">
 	           </div>
    	    	</div>
-   	    	
+   	    	a
    	    	
 			<!-- 관계도 -->
    	    	<div class="result02">
