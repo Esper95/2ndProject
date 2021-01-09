@@ -65,7 +65,7 @@
 	                <div class=join-btn onclick="onclick=document.all.j.click()">
 	                    <a href="#"><p>회원가입</p></a> 
 	                </div>
-                
+                	
             </div>
         </div>
         </div>

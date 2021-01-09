@@ -29,13 +29,10 @@
 	            </div>   
 				<nav class="navbar">
 					<ul>
-	                  	<%-- <%if(user!=null){ %> --%>
 	                    <li><a href="data.jsp"><span>온도계</span></a></li>
-	                    <li><a href="memory.jsp"><span>기억창고</span></a></li>
+	                    <li><a href="http://118.40.82.69:9000/timefile" method="post" enctype="multipart/form-data"><span>기억창고</span></a></li>
 	                    <li><a href="contact.jsp"><span>연결고리</span></a></li>
-<%-- 	                    <%}else{ %>
-	                    <%} %>
-	                </ul> --%>
+	                </ul> 
 	       	    </nav>
 	       </div>
         </div>
