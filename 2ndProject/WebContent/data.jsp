@@ -138,10 +138,8 @@ memberDTO user = (memberDTO)session_user.getAttribute("user");
 
         <div id="footer">
             <div class="footer-box">
-                <span>트위터</span>
-                <span>페이스북</span>
-                <span>인스타그램</span>  
-            </div>
+                <span>Made by</span>
+                <span>LAB 병아리</span>  
         </div>
         
         <!-- 전체 contain 끝 -->
