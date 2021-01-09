@@ -14,16 +14,20 @@
 </head>
 <body >
 	<!-- 전체 contain -->
-<%HttpSession session_user = request.getSession(); 
-memberDTO user = (memberDTO)session_user.getAttribute("user");
+<%	memberDTO user = (memberDTO)session.getAttribute("user");
+	String id =request.getParameter("id");
+	
   	//카카오톡 빈 간격 시간
-  	String hour =request.getParameter("hour");
-  	String minutes =request.getParameter("minutes");
-  	String second =request.getParameter("second");
   	// 카카오톡 문장 개수
+ 	// 낮 저녁 카톡 개수
+  	// ㅋㅋㅋ 개수
+  	String term =request.getParameter("term");
   	String countMe =request.getParameter("countMe");
   	String countYou=request.getParameter("countYou");
-  	// ㅋㅋㅋ 개수
+ 	String morningMe = request.getParameter("morningMe");
+ 	String morningYou =request.getParameter("morningYou");
+ 	String nightMe = request.getParameter("nightMe");
+ 	String nightYou = request.getParameter("nightYou");
   	String kikiCount = request.getParameter("kikiCount");
   	// 감정 분류 개수
     String worry =request.getParameter("worry");
@@ -43,11 +47,15 @@ memberDTO user = (memberDTO)session_user.getAttribute("user");
 	String happy1 =request.getParameter("happy1");
 	String happy2 =request.getParameter("happy2");
 	String happy3 =request.getParameter("happy3");
-	// 낮 저녁 카톡 개수
-	String morningMe = request.getParameter("morningMe");
-	String morningYou =request.getParameter("morningYou");
-	String nightMe = request.getParameter("nightMe");
-	String nightYou = request.getParameter("nightYou");
+	  	// kakaodata DTO 데이터 저장
+  	dataDTO kakaodata = new dataDTO(id,"you",term,countMe,countYou,morningMe,morningYou,nightMe,nightYou,kikiCount);
+  	session.setAttribute("kakaodata", kakaodata);
+	// emotion DTO 데이터 저장
+	dataDTO emotion = new dataDTO(id,"you",worry,angry,sad,happy);
+	session.setAttribute("emotion", emotion);
+	// keyword DTO 데이터 저장
+	dataDTO keyword = new dataDTO(id,"you",worry1,worry2,worry3,angry1,angry2,angry3,sad1,sad2,sad3,happy1,happy2,happy3);
+	session.setAttribute("keyword", keyword);
  %>
     <div id="contain">
     
@@ -55,26 +63,18 @@ memberDTO user = (memberDTO)session_user.getAttribute("user");
         <div id="header">
         	<div class="top">
     			<ul>
-	    			<%if(user!=null) {%>
 	    			<li><a href="LogoutService"><span data-hover="로그아웃">로그아웃</span></a></li>  	
-	    			<%} else{%>
-	    			<li><a href="login.jsp"><span data-hover="로그인/회원가입">로그인</span></a></li>
-	                <li><a href="join.jsp"><span data-hover="로그인/회원가입">회원가입</span></a></li>
-	    			<%} %>	                    		
     			</ul>
     		</div>
     		<div class="menu">
 	            <div class="logo">
-	               	<a href="home.jsp">감정의 온도</a>
+	               	<a href="home.jsp"><%=user %>감정의 온도</a>
 	            </div>   
 				<nav class="navbar">
 					<ul>
-	                  	<%if(user!=null){ %>
 	                    <li><a href="data.jsp"><span>온도계</span></a></li>
 	                    <li><a href="memory.jsp"><span>기억창고</span></a></li>
 	                    <li><a href="contact.jsp"><span>연결고리</span></a></li>
-	                    <%}else{ %>
-	                    <%} %>
 	                </ul>
 	       	    </nav>
 	       </div>
@@ -117,7 +117,8 @@ memberDTO user = (memberDTO)session_user.getAttribute("user");
    	    		<!-- 감정차트 + 저장 -->
    	    		<div class="result-02">
    	    			<div class="temperature">
-                		<iframe src="graph\dot.jsp"></iframe>
+                		 <iframe src="graph/dot.jsp?id=<%=id %>&worry=<%=worry%>&angry=<%=angry%>&sad=<%=sad%>&happy=<%=happy%>&worry1=<%=worry1%>&worry2=<%=worry2%>&worry3=<%=worry3%>&angry1=<%=angry1%>&angry2=<%=angry2%>&angry3=<%=angry3%>&sad1=<%=sad1%>&sad2=<%=sad2%>&sad3=<%=sad3%>&happy1=<%=happy1%>&happy2=<%=happy2%>&happy3=<%=happy3%>"></iframe>
+
             		</div>
    	    		</div>
    	    		<form action="DataSave">
@@ -143,6 +144,5 @@ memberDTO user = (memberDTO)session_user.getAttribute("user");
         <!-- 전체 contain 끝 -->
     </div>
     </div>
-    
 </body>
 </html>

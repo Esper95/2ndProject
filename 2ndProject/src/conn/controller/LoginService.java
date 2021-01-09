@@ -34,7 +34,7 @@ public class LoginService extends HttpServlet {
 		if(user!=null) {
 			HttpSession session = request.getSession();
 			session.setAttribute("user", user);
-			response.sendRedirect("home-total.jsp");
+			response.sendRedirect("home.jsp");
 		}else {
 			response.sendRedirect("join.jsp");
 		}
