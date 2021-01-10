@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>감정의 온도</title>
+    <title>감정의 온도</title>t
 	<link rel="stylesheet" href="css-sample/totalStyle.css" type="text/css">
 
     <script src="js/jquery-3.5.1.min.js"></script>
@@ -70,18 +70,16 @@
     		</div>
     		<div class="menu">
     			<div class="menu-box">
-	            <div class="logo">
-	               	<a href="home.jsp"><img src="">감정의 온도</a>
-	            </div>   
-				<nav class="navbar">
-					<ul>
-
-
-	                    <li><a href="data.jsp"><span>온도계</span></a></li>
-                  		<li><a href="http://118.40.82.69:9000/timefile" method="post" enctype="multipart/form-data"><span>기억창고</span></a></li>
-	                    <li><a href="contact.jsp"><span>감정사전</span></a></li>
-	                </ul>
-	       	    </nav>
+		            <div class="logo">
+		               	<a href="home.jsp"><img src="img/logo.png"></a>
+		            </div>   
+					<nav class="navbar">
+						<ul>
+	           				<li><a href="data.jsp"><span>온도계</span></a></li>
+	                  		<li><a href="http://118.40.82.69:9000/timefile" method="post" enctype="multipart/form-data"><span>기억창고</span></a></li>
+		                    <li><a href="dictionary.jsp"><span>감정사전</span></a></li>
+		                </ul>
+		       	    </nav>
 	       	    </div>
 	       </div>
         </div>
@@ -97,8 +95,8 @@
    	    		<div class="data-up">
    	    			<form action="http://118.40.82.69:9000/predict" method="post" enctype="multipart/form-data">
                     <div class="data-up-btn">
-                        <input type="file"  name="file" id="file"><br>
-                        <input type="submit"  name="upload" id="upload">
+                        <input type="file"  name="file" id="file" value="파일 선택">
+                        <input type="submit"  name="upload" id="upload" value="제출하기">
                     </div>
                    	</form>
                </div>
@@ -112,11 +110,11 @@
    	    	</div> -->
    	    	
    	    	<!-- 데이터 분석 후 출력 -->
-   	    	<div class="result">
+   	    	<div class="data-result">
    	    	
    	    		<!-- 온도계 -->
    	    		<div class="result-01">
-   	    			<div class="result-title">우리의 감정온도</div>
+   	    			<div class="result-title">우리의 감정온도는</div>
    	    			<div class="result-img">
    	    				<iframe src="graph\temperature.jsp"></iframe>
    	    			</div>
@@ -131,13 +129,11 @@
    	    		</div>
    	    		<div class="data-save" >
    	    			<form action="DataSave">
-   	    				<div class="save">
-   	    					<p>상대방 이름을 입력하세요</p>
-   	    				<input type="text" name = "partner">
+   	    				<div class="partner">
+   	    					<input type="text" name = "partner">
    	    				</div>
 						<div class="save" onclick="onclick=document.all.save.click()">
-   	    					<input type="submit" style="display: none;" id="save" >
-   	    					<p>ㅣ온도 저장하기</p>
+  	    					<input type="submit" id="save" value="온도 저장하기">			
 						</div>   	    				
    	    			</form>
    	    		</div>

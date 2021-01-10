@@ -20,10 +20,15 @@
   <script src="https://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/lines/lines.js"></script>
   <script src="index.js"></script>
   <style>
+  
+  	body {
+  	width : 1400px;
+  	height : 500px;
+  	}
     .bubbleChart {
       min-width: 100px;
-      max-width: 700px;
-      height: 700px;
+      max-width: 500px;
+      height: 500px;
       margin: 0 auto;
     }
     .bubbleChart svg{

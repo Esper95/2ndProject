@@ -12,6 +12,16 @@
 <script src="https://d3js.org/d3.v3.min.js" language="JavaScript"></script>
 <script src="liquidFillGauge.js" language="JavaScript"></script>
 <style>
+
+body {
+width : 1000px;
+height : 450px;
+}
+
+body { 
+margin : 0 auto;
+}
+
 ul {
 	list-style: none;
 	margin-top: 10px;
@@ -24,7 +34,7 @@ ul li {
 }
 </style>
 </head>
-<body style="background-color: whitesmoke;">
+<body>
 
 <%
 request.setCharacterEncoding("UTF-8");

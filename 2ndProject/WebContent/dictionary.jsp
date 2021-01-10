@@ -20,21 +20,21 @@
         <div id="header">
         	<div class="top">
     			<ul>
-	    			<li><a href="LogoutService"><span>로그아웃</span></a></li>  	
+	    			<li><a href="LogoutService"><span data-hover="로그아웃">로그아웃</span></a></li>  	
     			</ul>
     		</div>
     		<div class="menu">
     			<div class="menu-box">
-	            <div class="logo">
-	               	<a href="home.jsp"><img src="">감정의 온도</a>
-	            </div>   
-				<nav class="navbar">
-					<ul>
-	                    <li><a href="data.jsp"><span>온도계</span></a></li>
-	                    <li><a href="http://118.40.82.69:9000/timefile" method="post" enctype="multipart/form-data"><span>연결고리</span></a></li>
-	                    <li><a href="dictionary.jsp"><span>감정사전</span></a></li>
-	                </ul>
-	       	    </nav>
+		            <div class="logo">
+		               	<a href="home.jsp"><img src="img/logo.png"></a>
+		            </div>   
+					<nav class="navbar">
+						<ul>
+	           				<li><a href="data.jsp"><span>온도계</span></a></li>
+	                  		<li><a href="http://118.40.82.69:9000/timefile" method="post" enctype="multipart/form-data"><span>기억창고</span></a></li>
+		                    <li><a href="dictionary.jsp"><span>감정사전</span></a></li>
+		                </ul>
+		       	    </nav>
 	       	    </div>
 	       </div>
         </div>
@@ -43,12 +43,10 @@
    	    <div id="main">
    	    
    	    	<div class="ditionary">
-   	    		<div class="dictionary-text">
+   	    		<div class="dictionary-title">
    	 				감정사전 구축에 참여하세요!
    	    		</div>
-   	    		<div class="dictionary-title">
-					감정사전 설문조사 
-               </div>
+
                
                <div class="dictionary-list">
                 	<form action="" method="" enctype="">

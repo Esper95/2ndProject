@@ -18,7 +18,7 @@
   
        <div id="contain">
     
-        <!-- 섹션 01 로고/메뉴 -->
+    	<!-- 섹션 01 로고/메뉴 -->
         <div id="header">
         	<div class="top">
     			<ul>
@@ -27,24 +27,23 @@
 	    			<%} else{%>
 	    			<li><a href="login.jsp"><span data-hover="로그인/회원가입">로그인</span></a></li>
 	                <li><a href="join.jsp"><span data-hover="로그인/회원가입">회원가입</span></a></li>
-	    			<%} %>	                    		
+	    			<%} %>                 		
     			</ul>
     		</div>
     		<div class="menu">
     			<div class="menu-box">
-	            <div class="logo">
-	               	<a href="home.jsp"><img src="">감정의 온도</a>
-	            </div>   
-				<nav class="navbar">
-					<ul>
-<%-- 	                  	<%if(user!=null){ %> --%>
-	                    <li><a href="data.jsp"><span>온도계</span></a></li>
-	                    <li><a href="memory.jsp"><span>연결고리</span></a></li>
-	                    <li><a href="dictionary.jsp"><span>감정사전</span></a></li>
-<%-- 	                    <%}else{ %>
-	                    <%} %> --%>
-	                </ul>
-	       	    </nav>
+		            <div class="logo">
+		               	<a href="home.jsp"><img src="img/logo.png"></a>
+		            </div>   
+					<nav class="navbar">
+						<ul>
+							<%if(user!=null){ %>
+		                    <li><a href="data.jsp"><span>온도계</span></a></li>
+		                    <li><a href="memory.jsp"><span>연결고리</span></a></li>
+		                    <li><a href="dictionary.jsp"><span>감정사전</span></a></li>
+		                	<%}else{} %>
+		                </ul>
+		       	    </nav>
 	       	    </div>
 	       </div>
         </div>

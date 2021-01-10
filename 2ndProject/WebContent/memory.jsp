@@ -37,16 +37,16 @@
     		</div>
     		<div class="menu">
     			<div class="menu-box">
-	            <div class="logo">
-	               	<a href="home.jsp"><img src="">감정의 온도</a>
-	            </div>   
-				<nav class="navbar">
-					<ul>
-	                    <li><a href="data.jsp"><span>온도계</span></a></li>
-	                    <li><a href="http://118.40.82.69:9000/timefile" method="post" enctype="multipart/form-data"><span>연결고리</span></a></li>
-	                    <li><a href="dictionary.jsp"><span>감정사전</span></a></li>
-	                </ul>
-	       	    </nav>
+		            <div class="logo">
+		               	<a href="home.jsp"><img src="img/logo.png"></a>
+		            </div>   
+					<nav class="navbar">
+						<ul>
+	           				<li><a href="data.jsp"><span>온도계</span></a></li>
+	                  		<li><a href="http://118.40.82.69:9000/timefile" method="post" enctype="multipart/form-data"><span>기억창고</span></a></li>
+		                    <li><a href="dictionary.jsp"><span>감정사전</span></a></li>
+		                </ul>
+		       	    </nav>
 	       	    </div>
 	       </div>
         </div>
@@ -55,25 +55,19 @@
    	    <div id="main">
    	    
    	    	<div class="relation">
-   	    		<div class="relation01">
-	   	    		<div class="relation-title">
+	   	    	<div class="relation-title">
 	   	 				감정관계도
-	   	    		</div>
-	   	    		<!-- <div class="relation-text">
-						우리의 관계는 블라블라 블라 
-	               </div> -->
-	           </div>
-	           <div class="relation02">
+	   	    	</div>
+	           <div class="relation-form">
 	           		<form action="DataMemory">
 	           		<input type="submit" value="확인하기" name="relation-btn" id="relation-btn">
 	           		</form>
 	           </div>
    	    	</div>
-   	    	a
-   	    	
+
 			<!-- 관계도 -->
    	    	<div class="result02">
-   	    			<div class="temperature">
+   	    			<div class="relationship">
                 		<iframe src="graph\bubble.jsp?one=<%=one%>&two=<%=two%>&three=<%=three%>&four=<%=four%>&five=<%=five%>"></iframe>
             		</div>
    	    	</div>

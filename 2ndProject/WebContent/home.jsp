@@ -30,18 +30,18 @@
     		</div>
     		<div class="menu">
     			<div class="menu-box">
-	            <div class="logo">
-	               	<a href="home.jsp"><img src="">감정의 온도</a>
-	            </div>   
-				<nav class="navbar">
-					<ul>
-						<%if(user!=null){ %>
-	                    <li><a href="data.jsp"><span>온도계</span></a></li>
-	                    <li><a href="memory.jsp"><span>연결고리</span></a></li>
-	                    <li><a href="dictionary.jsp"><span>감정사전</span></a></li>
-	                	<%}else{} %>
-	                </ul>
-	       	    </nav>
+		            <div class="logo">
+		               	<a href="home.jsp"><img src="img/logo.png"></a>
+		            </div>   
+					<nav class="navbar">
+						<ul>
+							<%if(user!=null){ %>
+		                    <li><a href="data.jsp"><span>온도계</span></a></li>
+		                    <li><a href="memory.jsp"><span>연결고리</span></a></li>
+		                    <li><a href="dictionary.jsp"><span>감정사전</span></a></li>
+		                	<%}else{} %>
+		                </ul>
+		       	    </nav>
 	       	    </div>
 	       </div>
         </div>
@@ -55,7 +55,7 @@
                     <img src="img\main-banner06.jpg">
                      <div class="img-text">
                 	문자 사이에 숨겨둔 감정의 온도를 잴 수 있다면
-                </div>
+                	</div>
                 </div>
             </div>
             

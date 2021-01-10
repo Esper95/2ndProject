@@ -8,21 +8,24 @@
     <title>Document</title>
     <style>
         html, body {
-        height: 100%;
+        width : 100px;
+        height : 50px;
+ 	display : flex;
+ 	justify-content : center;
+ 	align-items : center;
         }
 
         .container {
-        height: 100%;
+        height : 100%;
         display: flex;
-        align-items: center;
-        justify-content: center;
+/*         align-items: center;
+        justify-content: center; */
         }
 
         .show {
         transition: all 0.5s ease-in;
         color: black;
-        font-size: 60px;
-        margin: 0 auto;
+        font-size: 40px;
         }
     </style>
 </head>
@@ -31,7 +34,7 @@
         <div class="show js-count">
           100
         </div>
-        <div> µµ¾¾</div>
+        <div>¡ÆC</div>
       </div>
 
       <script>
